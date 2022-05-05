@@ -9,6 +9,9 @@
         <ul class="flex gap-4 items-center">
           <li><a href="/posts">Blog</a></li>
           <li><a href="https://github.com/jclong98">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/jacob-c-long/">LinkedIn</a>
+          </li>
         </ul>
       </nav>
     </header>
