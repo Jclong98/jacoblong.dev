@@ -32,7 +32,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
     <Content class="prose max-w-none" />
 
     <footer class="flex justify-between items-center mt-4 mb-8">
-      <a href="/blog">← Back to the blog</a>
+      <a href="/posts">← Back to the blog</a>
 
       <div class="flex justify-between items-center gap-4">
         <div v-if="prevPost" class="border p-2">
