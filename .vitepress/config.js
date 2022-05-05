@@ -14,13 +14,6 @@ export default defineConfig({
       },
     ],
     [
-      'meta',
-      {
-        name: 'twitter:image',
-        content: 'https://vuejs.org/images/logo.png',
-      },
-    ],
-    [
       'link',
       {
         rel: 'icon',
