@@ -4,27 +4,34 @@ export default defineConfig({
   title: 'Jacob Long',
   description: "Jacob Long's personal website",
   head: [
-    ['meta', { name: 'twitter:site', content: '@vuejs' }],
-    ['meta', { name: 'twitter:card', content: 'summary' }],
-    // [
-    //   'meta',
-    //   {
-    //     name: 'twitter:image',
-    //     content: 'https://vuejs.org/images/logo.png'
-    //   }
-    // ],
+    ['meta', { name: 'twitter:site', content: '@jclong98' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    [
+      'meta',
+      {
+        name: 'twitter:image',
+        content: '/og_image.png',
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'twitter:image',
+        content: 'https://vuejs.org/images/logo.png',
+      },
+    ],
     [
       'link',
       {
         rel: 'icon',
         type: 'image/svg',
-        href: '/favicon.svg'
-      }
-    ]
+        href: '/favicon.svg',
+      },
+    ],
   ],
   vite: {
     build: {
-      minify: 'terser'
-    }
-  }
+      minify: 'terser',
+    },
+  },
 })
