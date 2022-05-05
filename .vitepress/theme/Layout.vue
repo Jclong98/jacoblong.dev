@@ -30,8 +30,5 @@ import { useRoute } from 'vitepress'
 import Article from './Article.vue'
 
 const route = useRoute()
-
-console.log(route.path)
-
 const isPost = computed(() => route.path.includes('/posts/'))
 </script>
