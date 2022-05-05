@@ -3,9 +3,7 @@ title: Home
 ---
 
 <script setup>
-  import Blurb from './.vitepress/theme/Blurb.vue'
-  import LatestPosts from './.vitepress/theme/LatestPosts.vue'
+  import Home from './.vitepress/theme/Home.vue'
 </script>
 
-<Blurb />
-<LatestPosts />
+<Home />

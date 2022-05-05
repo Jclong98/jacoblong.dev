@@ -4,7 +4,10 @@ import { data as posts } from '../posts.data'
 </script>
 <template>
   <ul>
-    <li v-for="{ title, href, date, excerpt } of posts" class="my-12">
+    <li
+      v-for="{ title, href, date, excerpt } of posts"
+      class="my-12 bg-white p-4 rounded-lg shadow-lg"
+    >
       <article>
         <Date :date="date" />
 

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background-color: hsl(0, 0%, 95%);
+}
+
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML.
  * Based on https://github.com/chriskempson/tomorrow-theme

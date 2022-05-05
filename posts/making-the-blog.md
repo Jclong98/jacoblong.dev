@@ -4,13 +4,13 @@ date: 2022-05-04
 author: Jacob Long
 ---
 
-Creating a personal blog with VitePress
+Creating a personal blog with [VitePress](https://vitepress.vuejs.org/)
 
 ---
 
 [[toc]]
 
-While browsing Twitter, I noticed that many of the developers on there have personal blogs to document their projects and other cool things they come across. I've recently taken an interest in the Vite ecosystem, so I figured I would try to make a personal blog with VitePress, a Vite powered static site generator.
+While browsing Twitter, I noticed that many of the developers on there have personal blogs to document their projects and other cool things they come across. I've recently taken an interest in the Vite ecosystem, so I figured I would try to make a personal blog with [VitePress](https://vitepress.vuejs.org/), a Vite powered static site generator.
 
 ## Picking the tools
 
@@ -28,14 +28,8 @@ VitePress has pretty good documentation about actually setting up a project that
 
 After making a barebones working blog, it was time to stlye. For this, I wanted to use UnoCSS, but I don't think that VitePress has the ability to use Vite plugins. As a compromise, the project upon which this one is base uses TailwindCSS, so I did too because I could see that it was working and was able to figure out how to get it into this project as well.
 
-<div class="grid gap-4">
-  <div class="border">
-    <img src="/unstyled-blog.png" >
-  </div>
-  <div class="border">
-    <img src="/minimally-styled-blog.png">
-  </div>
-</div>
+<img class="border" src="/unstyled-blog.png" >
+<img class="border" src="/minimally-styled-blog.png">
 
 For now I'm leaving it pretty barebones until I get some more inspiration to make something that is actually visually interesting.
 

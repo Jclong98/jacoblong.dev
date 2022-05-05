@@ -2,19 +2,19 @@
 import Date from './Date.vue'
 import { data as posts } from '../posts.data'
 
-const latestPosts = posts.slice(0, 3)
+const recentPosts = posts.slice(0, 3)
 </script>
 <template>
   <div>
-    <h2 class="text-2xl mt-8 mb-4">Recent Posts</h2>
+    <h2 class="text-2xl mt-8 mb-4">Recent Blog Posts</h2>
 
     <ul class="grid sm:grid-cols-3 gap-4">
       <li
-        v-for="{ title, href, date, excerpt } of latestPosts"
-        class="border p-4"
+        v-for="{ title, href, date, excerpt } of recentPosts"
+        class="p-4 bg-white rounded-lg shadow-lg"
       >
         <article class="h-full flex flex-col justify-between">
-          <div class="">
+          <div>
             <Date :date="date" />
 
             <h2 class="text-xl">

@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify/vue': ^3.2.1
   '@tailwindcss/typography': ^0.5.0
   gray-matter: ^4.0.2
   tailwindcss: ^3.0.2
@@ -10,6 +11,7 @@ dependencies:
   tailwindcss: 3.0.24
 
 devDependencies:
+  '@iconify/vue': 3.2.1
   '@tailwindcss/typography': 0.5.2_tailwindcss@3.0.24
   gray-matter: 4.0.3
   vitepress: 0.21.6
@@ -161,6 +163,12 @@ packages:
       algoliasearch: 4.11.0
     transitivePeerDependencies:
       - '@algolia/client-search'
+    dev: true
+
+  /@iconify/vue/3.2.1:
+    resolution: {integrity: sha512-c4R6ZgFo1JrJ8aPMMgOPgfU7lBswihMGR+yWe/P4ZukC3kTkeT4+lkt9Pc/itVFMkwva/S/7u9YofmYv57fnNQ==}
+    peerDependencies:
+      vue: 3.x
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:

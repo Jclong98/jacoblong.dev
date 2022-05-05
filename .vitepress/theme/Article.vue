@@ -20,8 +20,8 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 </script>
 
 <template>
-  <article>
-    <header>
+  <article class="bg-white p-4 rounded-lg shadow-xl mb-4">
+    <header class="mb-8">
       <Date :date="date" />
       <h1 class="text-4xl">
         {{ data.title }}
