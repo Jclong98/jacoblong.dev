@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vitepress'
 import Article from './Article.vue'
+import Brand from './Brand.vue'
 
 const route = useRoute()
 const isPost = computed(() => route.path.includes('/posts/'))
@@ -57,7 +58,7 @@ const links = [
     <header class="my-6">
       <nav class="flex justify-between">
         <a href="/" aria-label="Home">
-          <img alt="logo" src="/favicon.svg" class="min-w-[50px]" />
+          <Brand class="min-w-[50px]" />
         </a>
 
         <ul class="flex gap-4 items-center">
