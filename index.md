@@ -3,8 +3,8 @@ title: Home
 ---
 
 <p class="prose">
-Hi, I'm Jacob Long.
 
+Hi, I'm Jacob Long.  
 I like to make websites 😀
 
 Find my work on [GitHub](https://github.com/jclong98)  
