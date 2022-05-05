@@ -10,7 +10,7 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:image',
-        content: '/og_image.png',
+        content: 'https://jacoblong.dev/og_image.png',
       },
     ],
     [
