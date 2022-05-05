@@ -1,0 +1,63 @@
+---
+title: Hello World!
+date: 2022-05-04
+author: Jacob Long
+---
+
+Creating a personal blog with VitePress
+
+---
+
+[[toc]]
+
+While browsing Twitter, I noticed that many of the developers on there have personal blogs to document their projects and other cool things they come across. I've recently taken an interest in the Vite ecosystem, so I figured I would try to make a personal blog with VitePress, a Vite powered static site generator.
+
+## Picking the tools
+
+Since my tools of choice right now are Vue and Nuxt, I started looking into the [Nuxt Content Module](https://content.nuxtjs.org/). However, this module has not been updated to Nuxt 3 yet. This was a dealbreaker, as I really wanted to be able to use Vite because of the speed and ease of development. In the future, I may revisit Nuxt Content, but for now I needed something else.
+
+A project that I considered using as a starter is [Anthony Fu's](https://twitter.com/antfu7) [Vitesse](https://github.com/antfu/vitesse). This is a great Vue project starter that has a _ton_ of included handy features. The main important feature that I was looking for was dropping in a markdown file and creating a new page based on it. Vitesse handles this wonderfully, but I didn't want to include the complexity of what came with the rest of it. There is a [Vitesse Lite](https://github.com/antfu/vitesse-lite) but the markdown features were removed.
+
+I saw that [@patak_dev](https://twitter.com/patak_dev), one of Vite's core team members had made a blog post on hist website [patak.dev](https://patak.dev/) about the vite ecosystem. His site was made with VitePress with a custom theme on top of it. After seeing this, I looked into VitePress and found that it is a very simple to get started documentation tool. It comes with build in route generation based on markdown files, frontmatter, code styling and the ability to use Vue components in markdown. It seemed to do exactly what I wanted for this project, so that's what I went with.
+
+## Writing the Code
+
+VitePress has pretty good documentation about actually setting up a project that will be used for documentation, but it lacks a bit on anything else (the main motivation for the creation of VitePress was to make writing documentation easier). Because of this, a project that I used as reference for creating a blog was [The Vue Point](https://blog.vuejs.org/). A lot of what makes up the blog you're reading right now is based on this website.
+
+## Styling
+
+After making a barebones working blog, it was time to stlye. For this, I wanted to use UnoCSS, but I don't think that VitePress has the ability to use Vite plugins. As a compromise, the project upon which this one is base uses TailwindCSS, so I did too because I could see that it was working and was able to figure out how to get it into this project as well.
+
+<div class="grid gap-4">
+  <div class="border">
+    <img src="/unstyled-blog.png" >
+  </div>
+  <div class="border">
+    <img src="/minimally-styled-blog.png">
+  </div>
+</div>
+
+For now I'm leaving it pretty barebones until I get some more inspiration to make something that is actually visually interesting.
+
+## Deployment
+
+Netlify has been a great website host for me. I've deployed a few projects there now, so I chose it because I was familiar and because it's very simple to import projects from your GitHub and have them deployed in a matter of minutes. Also its free 👀👀
+
+To deploy I reused the `netlify.toml` from The Vue Point
+
+```toml
+[build.environment]
+  NODE_VERSION = "16"
+  NPM_FLAGS = "--version" # prevent Netlify npm install
+[build]
+  publish = ".VitePress/dist"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npm run build"
+```
+
+When the project gets deployed this will tell it how to build and publish without me manually having to specify those with the Netlify app.
+
+## Continued Development
+
+Overall, VitePress has been a decent experience for blog building, but it does leave some to be desired about configuration. VitePress states in its docs that it is less configurable and more opinionated than its predecessor VuePress, so I might make a blog template for use in other projects in the future.
+
+Site needs a dark mode **badly**. Right now it's just white, which hurts my eyeballs.
