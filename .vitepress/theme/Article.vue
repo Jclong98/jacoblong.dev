@@ -21,9 +21,9 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 
 <template>
   <article class="bg-white dark:bg-stone-800 p-4 rounded-lg shadow-xl mb-4">
-    <header class="mb-8">
+    <header>
       <Date :date="date" />
-      <h1 class="text-4xl">
+      <h1 class="text-4xl mt-4">
         {{ data.title }}
       </h1>
     </header>
