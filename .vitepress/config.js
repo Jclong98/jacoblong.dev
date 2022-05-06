@@ -21,6 +21,12 @@ export default defineConfig({
         href: '/favicon.png',
       },
     ],
+    [
+      'script',
+      {
+        src: '/setColorScheme.js',
+      },
+    ],
   ],
   vite: {
     build: {
