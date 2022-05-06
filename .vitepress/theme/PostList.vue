@@ -27,7 +27,10 @@ import { data as posts } from '../posts.data'
           </div>
 
           <div class="mt-2">
-            <a aria-label="read more" :href="href">Read more →</a>
+            <a aria-label="read more" :href="href">
+              Read more
+              <Icon icon="mdi:arrow-right" class="inline" />
+            </a>
           </div>
         </article>
       </li>
