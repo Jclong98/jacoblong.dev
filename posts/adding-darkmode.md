@@ -45,3 +45,7 @@ module.exports = {
   darkMode: 'class',
 }
 ```
+
+If the look of the site ever changes, here's what it looks like right now:
+
+![Image of Dark Mode](/dark-mode.png)
