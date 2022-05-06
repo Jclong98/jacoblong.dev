@@ -28,7 +28,10 @@ const recentPosts = posts.slice(0, 3)
             ></div>
           </div>
 
-          <a aria-label="read more" :href="href">Read more →</a>
+          <a aria-label="read more" :href="href">
+            Read more
+            <Icon icon="mdi:arrow-right" class="inline" />
+          </a>
         </article>
       </li>
     </ul>

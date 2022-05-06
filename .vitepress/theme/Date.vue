@@ -14,7 +14,9 @@ function getDateTime() {
 <template>
   <dl>
     <dt class="sr-only">Published on</dt>
-    <dd class="text-base leading-6 font-medium text-stone-500">
+    <dd
+      class="text-base leading-6 font-medium text-gray-500 dark:text-stone-500"
+    >
       <time :datetime="getDateTime()">{{ date.string }}</time>
     </dd>
   </dl>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  background-color: hsl(0, 0%, 95%);
+  background-color: rgb(243 244 246);
   transition: all ease-in-out 200ms;
 }
 

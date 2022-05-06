@@ -34,20 +34,35 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
     />
 
     <footer class="flex justify-between items-center mt-4 mb-8">
-      <a href="/posts">← Back to the blog</a>
+      <a href="/posts">
+        <Icon icon="mdi:arrow-left" class="inline" />
+        Back to the blog
+      </a>
 
       <div class="flex justify-between items-center gap-4">
-        <div v-if="prevPost" class="rounded-lg border border-stone-500 p-2">
-          <h2 class="text-stone-500">Previous Post</h2>
+        <div
+          v-if="prevPost"
+          class="rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg"
+        >
+          <h2 class="text-gray-500 dark:text-stone-500">Previous Post</h2>
           <div class="text-xl">
-            <a :href="prevPost.href">← {{ prevPost.title }}</a>
+            <a :href="prevPost.href">
+              <Icon icon="mdi:arrow-left" class="inline" />
+              {{ prevPost.title }}
+            </a>
           </div>
         </div>
 
-        <div v-if="nextPost" class="rounded-lg border border-stone-500 p-2">
-          <h2 class="text-stone-500">Next Post</h2>
+        <div
+          v-if="nextPost"
+          class="rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg"
+        >
+          <h2 class="text-gray-500 dark:text-stone-500">Next Post</h2>
           <div class="text-xl">
-            <a :href="nextPost.href">{{ nextPost.title }} →</a>
+            <a :href="nextPost.href">
+              {{ nextPost.title }}
+              <Icon icon="mdi:arrow-right" class="inline" />
+            </a>
           </div>
         </div>
       </div>
