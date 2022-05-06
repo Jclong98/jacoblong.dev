@@ -11,7 +11,7 @@ const recentPosts = posts.slice(0, 3)
     <ul class="grid sm:grid-cols-3 gap-4">
       <li
         v-for="{ title, href, date, excerpt } of recentPosts"
-        class="p-4 bg-white rounded-lg shadow-lg"
+        class="p-4 bg-white dark:bg-stone-800 rounded-lg shadow-lg"
       >
         <article class="h-full flex flex-col justify-between">
           <div>
@@ -21,7 +21,11 @@ const recentPosts = posts.slice(0, 3)
               <a :href="href">{{ title }}</a>
             </h2>
 
-            <div v-if="excerpt" class="prose" v-html="excerpt"></div>
+            <div
+              v-if="excerpt"
+              class="prose dark:prose-invert"
+              v-html="excerpt"
+            ></div>
           </div>
 
           <a aria-label="read more" :href="href">Read more →</a>

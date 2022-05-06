@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vitepress'
 import Article from './Article.vue'
 import Brand from './Brand.vue'
+import DarkToggle from './DarkToggle.vue'
 
 const route = useRoute()
 const isPost = computed(() => route.path.includes('/posts/'))
@@ -54,7 +55,9 @@ const links = [
 </script>
 
 <template>
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 mb-4">
+  <div
+    class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 mb-4 dark:text-stone-300"
+  >
     <header class="my-6">
       <nav class="flex justify-between">
         <a href="/" aria-label="Home">
@@ -62,13 +65,17 @@ const links = [
         </a>
 
         <ul class="flex gap-4 items-center">
-          <li v-for="link in links" :key="link.name" class="">
+          <li v-for="link in links" :key="link.name">
             <a :href="link.href" :title="link.title" class="text-xl">
               <span :class="{ 'sr-only': !link.showName }">
                 {{ link.name }}
               </span>
               <Icon class="inline text-2xl ml-1" :icon="link.icon" />
             </a>
+          </li>
+
+          <li>
+            <DarkToggle />
           </li>
         </ul>
       </nav>

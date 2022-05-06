@@ -11,7 +11,7 @@ import RecentPosts from './RecentPosts.vue'
       </p>
     </div>
 
-    <div class="prose mb-8">
+    <div class="prose dark:prose-invert mb-8">
       <p>
         Find my work on <a href="https://github.com/jclong98">GitHub</a> <br />
         Connect on
@@ -20,7 +20,7 @@ import RecentPosts from './RecentPosts.vue'
       </p>
     </div>
 
-    <hr />
+    <hr class="border-gray-300 dark:border-stone-700" />
 
     <RecentPosts />
   </div>

@@ -6,7 +6,7 @@ import { data as posts } from '../posts.data'
   <ul>
     <li
       v-for="{ title, href, date, excerpt } of posts"
-      class="my-12 bg-white p-4 rounded-lg shadow-lg"
+      class="my-12 bg-white dark:bg-stone-800 p-4 rounded-lg shadow-lg"
     >
       <article>
         <Date :date="date" />
@@ -17,7 +17,11 @@ import { data as posts } from '../posts.data'
               <a :href="href">{{ title }}</a>
             </h2>
 
-            <div v-if="excerpt" class="prose" v-html="excerpt"></div>
+            <div
+              v-if="excerpt"
+              class="prose dark:prose-invert"
+              v-html="excerpt"
+            ></div>
           </div>
 
           <div>

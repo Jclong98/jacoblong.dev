@@ -4,6 +4,11 @@
 
 html {
   background-color: hsl(0, 0%, 95%);
+  transition: all ease-in-out 200ms;
+}
+
+html.dark {
+  background-color: hsl(24, 10%, 10%);
 }
 
 /**
