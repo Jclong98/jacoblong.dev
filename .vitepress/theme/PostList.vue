@@ -3,17 +3,19 @@ import Date from './Date.vue'
 import { data as posts } from '../posts.data'
 </script>
 <template>
-  <ul>
-    <li
-      v-for="{ title, href, date, excerpt } of posts"
-      class="my-12 bg-white dark:bg-stone-800 p-4 rounded-lg shadow-lg"
-    >
-      <article>
-        <Date :date="date" />
+  <div>
+    <h1 class="text-5xl">Blog</h1>
 
-        <div>
+    <ul>
+      <li
+        v-for="{ title, href, date, excerpt } of posts"
+        class="my-6 bg-white dark:bg-stone-800 p-4 rounded-lg shadow-lg"
+      >
+        <article>
+          <Date :date="date" />
+
           <div>
-            <h2 class="text-4xl mb-4">
+            <h2 class="text-4xl my-2">
               <a :href="href">{{ title }}</a>
             </h2>
 
@@ -24,13 +26,13 @@ import { data as posts } from '../posts.data'
             ></div>
           </div>
 
-          <div>
+          <div class="mt-2">
             <a aria-label="read more" :href="href">Read more →</a>
           </div>
-        </div>
-      </article>
-    </li>
-  </ul>
+        </article>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style lang="scss" scoped></style>
