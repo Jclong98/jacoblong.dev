@@ -37,7 +37,10 @@ const recentPosts = posts.slice(0, 3)
     </ul>
 
     <div class="mt-4 mb-8">
-      <a href="/posts"> View All Blog Posts →</a>
+      <a href="/posts">
+        View All Blog Posts
+        <Icon icon="mdi:arrow-right" class="inline" />
+      </a>
     </div>
   </div>
 </template>
