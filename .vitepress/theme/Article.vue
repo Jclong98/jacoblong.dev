@@ -38,14 +38,14 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 
       <div class="flex justify-between items-center gap-4">
         <div v-if="prevPost" class="rounded-lg border border-stone-500 p-2">
-          <h2 class="text-stone-500">Previous Article</h2>
+          <h2 class="text-stone-500">Previous Post</h2>
           <div class="text-xl">
             <a :href="prevPost.href">← {{ prevPost.title }}</a>
           </div>
         </div>
 
         <div v-if="nextPost" class="rounded-lg border border-stone-500 p-2">
-          <h2 class="text-stone-500">Next Article</h2>
+          <h2 class="text-stone-500">Next Post</h2>
           <div class="text-xl">
             <a :href="nextPost.href">{{ nextPost.title }} →</a>
           </div>
