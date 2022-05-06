@@ -10,9 +10,9 @@ Adding dark mode with [TailwindCSS](https://tailwindcss.com/) and [VueUse](https
 
 [[toc]]
 
-Since This site was blindingliy bright (as can be seen in the pervious post), I decided that it was necessary to make a darkmode for it. Luckily, Tailwind CSS can be configured to use a dark mode very simply using the `dark:` modifier on any class.
+Since this site was blindingly bright (as can be seen in the previous post), I decided that it was necessary to make a dark mode for it. Luckily, Tailwind CSS can be configured to use a dark mode very easily using the `dark:` modifier on any class.
 
-VueUse is a vue package full of helpful composables. The ones we will be taking a look at in this post are `useDark` and `useToggle`. These functions can be used in combination to create a very simple darktoggle. `useDark` itself is actually a combination of the `usePreferredDark` and `useStorage`. This means that if the user decides that even though they might have light mode selected on their system, they can choose dark mode and it will persist using localstorage!
+VueUse is a Vue package full of helpful composables. The ones we will be taking a look at in this post are `useDark` and `useToggle`. These functions can be used in combination to create a very simple darktoggle. `useDark` itself is actually a combination of the `usePreferredDark` and `useStorage` composables. This means that if the user decides that even though they might have light mode selected on their system, they can choose dark mode and it will persist using localstorage!
 
 So to get started I added a new component called `DarkToggle.vue` to the navbar.
 
