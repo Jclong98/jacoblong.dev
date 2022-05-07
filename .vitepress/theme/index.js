@@ -1,7 +1,10 @@
-import './style.css'
+import Layout from './Layout.vue'
+
 import { Icon } from '@iconify/vue'
 
-import Layout from './Layout.vue'
+import './style.css'
+import 'uno.css'
+import '@unocss/reset/tailwind.css'
 
 export default {
   Layout,
