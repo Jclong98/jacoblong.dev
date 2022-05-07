@@ -14,6 +14,8 @@ In a previous blogpost I had mentioned wanting to use UnoCSS to style my site, b
 
 Basically, this issue asks that `vite.config.js` be loaded and used by VitePress, allowing the use of other Vite plugins, thus enabling the use of UnoCSS and many other Vite plugins should I choose to use any in the future 😁
 
+## Adding UnoCSS
+
 To actually add UnoCSS, first I had to remove Tailwind from the package.json, remove its use in `.vitepress/theme/style.css`, and remove the `tailwind.config.js` and `postss.config.js` files.
 
 Then I had to install UnoCSS
@@ -47,6 +49,8 @@ After all that, the site looks like this:
 
 ![unocss no reset](/unocss-no-reset.png)
 
+## Style Reset
+
 Well that's not right. I forgot to add the style reset. Luckily, UnoCSS comes with some style reset packages.
 
 All you've got to do to add them is install the style reset and import it where you're importing `uno.css`
@@ -67,6 +71,8 @@ Now the homepage looks like this:
 ![homepage with reset](/unocss-with-reset.png)
 
 Much better!
+
+## Typography
 
 The last step is to get the typography back with the [UnoCSS Typography Package](https://github.com/unocss/unocss/tree/main/packages/preset-typography) and the site should look almost exactly the same as before! I say almost because the way UnoCSS typography is styled is a bit different.
 
@@ -129,3 +135,7 @@ and for dark mode [Atom Dark by Joe Gibson](https://github.com/PrismJS/prism-the
 The final Product Looks like this:
 
 ![unocss final style](/unocss-final-style.png)
+
+## Concluding Thoughts
+
+UnoCSS has a lot of customization options to offer with regex based rules and macros to apply multiple classes at once so I'd like to use more of it in the future. I also am interested in the UnoCSS icons package to replace the Iconify Vue components that I'm using.
