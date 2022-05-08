@@ -58,7 +58,7 @@ const links = [
   <div
     class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 mb-4 dark:text-stone-300"
   >
-    <header class="my-6">
+    <div class="my-6">
       <nav class="flex justify-between">
         <a href="/" aria-label="Home">
           <Brand class="min-w-[50px]" />
@@ -79,7 +79,7 @@ const links = [
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
 
     <main>
       <div v-if="!isPost">
