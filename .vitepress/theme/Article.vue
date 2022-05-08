@@ -1,6 +1,5 @@
 <script setup>
 import Date from './Date.vue'
-import Author from './Author.vue'
 import { computed } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import { data as posts } from '../posts.data'
@@ -28,43 +27,49 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
       </h1>
     </header>
 
-    <!-- <Author /> -->
     <Content
       class="prose dark:prose-invert max-w-none dark:prose-hr:border-stone-700"
     />
 
-    <footer class="flex justify-between items-center mt-4 mb-8">
-      <a href="/posts">
-        <Icon icon="mdi:arrow-left" class="inline" />
-        Back to the blog
-      </a>
-
-      <div class="flex justify-between items-center gap-4">
-        <div
+    <!-- Footer -->
+    <footer
+      class="mt-4 mb-3 border-t border-gray-300 dark:border-stone-700 pt-4"
+    >
+      <div class="grid sm:grid-cols-2 gap-4">
+        <!-- Previous Post -->
+        <a
           v-if="prevPost"
+          :href="prevPost.href"
           class="rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg"
         >
           <h2 class="text-gray-500 dark:text-stone-500">Previous Post</h2>
           <div class="text-xl">
-            <a :href="prevPost.href">
-              <Icon icon="mdi:arrow-left" class="inline" />
-              {{ prevPost.title }}
-            </a>
+            <Icon icon="mdi:arrow-left" class="inline" />
+            {{ prevPost.title }}
           </div>
-        </div>
+        </a>
 
-        <div
+        <!-- Next Post -->
+        <a
           v-if="nextPost"
+          :href="nextPost.href"
           class="rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg"
         >
           <h2 class="text-gray-500 dark:text-stone-500">Next Post</h2>
           <div class="text-xl">
-            <a :href="nextPost.href">
-              {{ nextPost.title }}
-              <Icon icon="mdi:arrow-right" class="inline" />
-            </a>
+            {{ nextPost.title }}
+            <Icon icon="mdi:arrow-right" class="inline" />
           </div>
-        </div>
+        </a>
+
+        <!-- Back to blog button -->
+        <a
+          href="/posts"
+          class="rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg sm:col-span-2"
+        >
+          <Icon icon="mdi:arrow-left" class="inline" />
+          Back to the blog
+        </a>
       </div>
     </footer>
   </article>
