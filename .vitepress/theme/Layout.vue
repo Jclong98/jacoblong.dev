@@ -58,28 +58,26 @@ const links = [
   <div
     class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 mb-4 dark:text-stone-300"
   >
-    <div class="my-6">
-      <nav class="flex justify-between">
-        <a href="/" aria-label="Home">
-          <Brand class="min-w-[50px]" />
-        </a>
+    <nav class="flex justify-between my-6">
+      <a href="/" aria-label="Home">
+        <Brand class="min-w-[50px]" />
+      </a>
 
-        <ul class="flex gap-4 items-center">
-          <li v-for="link in links" :key="link.name">
-            <a :href="link.href" :title="link.title" class="text-xl">
-              <span :class="{ 'sr-only': !link.showName }">
-                {{ link.name }}
-              </span>
-              <Icon class="inline text-2xl ml-1" :icon="link.icon" />
-            </a>
-          </li>
+      <ul class="flex gap-4 items-center">
+        <li v-for="link in links" :key="link.name">
+          <a :href="link.href" :title="link.title" class="text-xl">
+            <span :class="{ 'sr-only': !link.showName }">
+              {{ link.name }}
+            </span>
+            <Icon class="inline text-2xl ml-1" :icon="link.icon" />
+          </a>
+        </li>
 
-          <li>
-            <DarkToggle />
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <li>
+          <DarkToggle />
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <div v-if="!isPost">
