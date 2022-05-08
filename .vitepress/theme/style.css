@@ -5,6 +5,7 @@ html {
 
 html.dark {
   background-color: hsl(24, 10%, 10%);
+  color-scheme: dark;
 }
 
 /**
