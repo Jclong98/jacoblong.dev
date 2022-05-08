@@ -42,9 +42,11 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           :href="prevPost.href"
           class="rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg"
         >
-          <h2 class="text-gray-500 dark:text-stone-500">Previous Post</h2>
-          <div class="text-xl">
+          <h2 class="text-gray-500 dark:text-stone-500">
             <Icon icon="mdi:arrow-left" class="inline" />
+            Previous Post
+          </h2>
+          <div class="text-xl">
             {{ prevPost.title }}
           </div>
         </a>
@@ -55,10 +57,12 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           :href="nextPost.href"
           class="rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg"
         >
-          <h2 class="text-gray-500 dark:text-stone-500">Next Post</h2>
+          <h2 class="text-gray-500 dark:text-stone-500">
+            Next Post
+            <Icon icon="mdi:arrow-right" class="inline" />
+          </h2>
           <div class="text-xl">
             {{ nextPost.title }}
-            <Icon icon="mdi:arrow-right" class="inline" />
           </div>
         </a>
 

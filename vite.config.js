@@ -10,7 +10,7 @@ export default {
         presetTypography({
           cssExtend: {
             hr: {
-              background: 'rgba(125, 125, 125, 0.5)',
+              background: 'rgba(125, 125, 125, 0.4)',
               height: '1px',
             },
             // reset both pre and code first to override default
