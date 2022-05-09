@@ -5,7 +5,10 @@ export default defineConfig({
   description: "Jacob Long's personal website",
   head: [
     ['meta', { name: 'twitter:site', content: '@jclong98' }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    [
+      'meta',
+      { name: 'twitter:card', content: 'https://jacoblong.dev/og_image.png' },
+    ],
     [
       'meta',
       {
