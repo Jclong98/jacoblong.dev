@@ -19,7 +19,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 </script>
 
 <template>
-  <article class="bg-white dark:bg-black rounded-lg shadow-xl mb-4">
+  <article class="bg-white dark:bg-black p-4 rounded-lg shadow-xl mb-4">
     <header>
       <Date :date="date" />
       <h1 class="text-4xl mt-4">
