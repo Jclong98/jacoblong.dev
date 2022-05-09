@@ -4,7 +4,8 @@ html {
 }
 
 html.dark {
-  background-color: hsl(24, 10%, 10%);
+  /* background-color: hsl(24, 10%, 10%); */
+  background-color: black;
   color-scheme: dark;
 }
 

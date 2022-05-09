@@ -7,7 +7,7 @@ export default {
     Unocss({
       shortcuts: {
         btn: 'rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg',
-        card: 'bg-white dark:bg-stone-800 rounded-lg p-4 shadow-lg',
+        card: 'bg-white dark:bg-stone-900 rounded-lg p-4 shadow-lg',
       },
       presets: [
         presetUno(),
@@ -22,7 +22,10 @@ export default {
               background: '',
             },
             pre: {
-              background: 'rgba(0, 0, 0, 0.07)',
+              background: '#f3f4f6',
+            },
+            'html.dark pre': {
+              background: '#1d1d1d',
             },
           },
         }),
