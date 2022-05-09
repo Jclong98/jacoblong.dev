@@ -1,9 +1,10 @@
 import { defineConfig } from 'vitepress'
 
+const title = 'jacoblong.dev'
 const description = "Jacob Long's personal website"
 
 export default defineConfig({
-  title: 'Jacob Long',
+  title: title,
   description: description,
   head: [
     [
@@ -24,7 +25,7 @@ export default defineConfig({
     // og:
     ['meta', { property: 'og:url', content: 'https://jacoblong.dev/' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'jacoblong.dev' }],
+    ['meta', { property: 'og:title', content: title }],
     ['meta', { property: 'og:description', content: description }],
     [
       'meta',
@@ -36,7 +37,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:domain', content: 'jacoblong.dev' }],
     ['meta', { name: 'twitter:url', content: 'https://jacoblong.dev' }],
-    ['meta', { name: 'twitter:title', content: 'jacoblong.dev' }],
+    ['meta', { name: 'twitter:title', content: title }],
     ['meta', { name: 'twitter:description', content: description }],
     [
       'meta',
