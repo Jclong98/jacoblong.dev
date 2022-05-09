@@ -86,6 +86,11 @@ const links = [
       <Article v-else />
     </main>
 
-    <footer>CC BY-NC-SA 4.0 2022-PRESENT © Jacob Long</footer>
+    <footer>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+        CC BY-NC-SA 4.0
+      </a>
+      2022-PRESENT © Jacob Long
+    </footer>
   </div>
 </template>
