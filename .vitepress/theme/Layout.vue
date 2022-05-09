@@ -55,9 +55,7 @@ const links = [
 </script>
 
 <template>
-  <div
-    class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 mb-4 dark:text-stone-300"
-  >
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 mb-4 dark:text-stone-300">
     <nav class="flex justify-between my-6">
       <a href="/" aria-label="Home">
         <Brand class="min-w-[50px]" />
