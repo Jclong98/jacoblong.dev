@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-const description = Jacob Long's personal website
+const description = "Jacob Long's personal website"
 
 export default defineConfig({
   title: 'Jacob Long',
@@ -25,10 +25,7 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://jacoblong.dev/' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'jacoblong.dev' }],
-    [
-      'meta',
-      { property: 'og:description', content: description },
-    ],
+    ['meta', { property: 'og:description', content: description }],
     [
       'meta',
       { property: 'og:image', content: 'https://jacoblong.dev/og_image.png' },
