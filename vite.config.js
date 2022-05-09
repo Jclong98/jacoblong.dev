@@ -25,7 +25,7 @@ export default {
               background: '#f3f4f6',
             },
             'html.dark pre': {
-              background: '#1d1d1d',
+              background: '#1c1917',
             },
           },
         }),
