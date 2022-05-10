@@ -65,24 +65,19 @@ const projects = [
     <article
       v-for="(project, index) in projects"
       :key="project.title"
-      class="card my-8 flex flex-col gap-4 justify-between sm:flex-row mt-14 md:mt-8"
-      :class="{ 'sm:flex-row-reverse': index % 2 === 0 }"
+      class="card my-8 grid gap-6 justify-between mt-14 md:mt-8 md:grid-cols-3"
     >
       <!-- Image -->
-      <a
-        :href="project.liveDemo"
-        class="rounded-lg sm:w-[300px] sm:h-[200px] shadow-lg -translate-y-12 -mb-8 sm:mb-0"
-        :class="[index % 2 === 0 ? 'md:translate-x-12' : 'md:-translate-x-12']"
-      >
+      <a :href="project.liveDemo" class="flex md:w-5/4 md:-translate-x-1/5">
         <img
           :src="project.image"
           :alt="project.imageAlt"
-          class="object-cover rounded-lg sm:h-[200px] sm:w-[300px]"
+          class="object-cover rounded-lg -translate-y-12 -mb-12 md:translate-y-0 md:mb-0"
         />
       </a>
 
       <!-- Text & actions -->
-      <div class="flex flex-col justify-between grow sm:max-w-[400px]">
+      <div class="flex flex-col justify-between md:col-span-2">
         <!-- title and description -->
         <div class="grid gap-2">
           <h2 class="text-3xl font-semibold">
@@ -92,7 +87,7 @@ const projects = [
         </div>
 
         <!-- actions -->
-        <div class="grid sm:grid-cols-2 gap-4 mt-6">
+        <div class="grid md:grid-cols-2 gap-4 mt-6">
           <!-- Live Demo -->
           <a
             v-if="project.liveDemo"
