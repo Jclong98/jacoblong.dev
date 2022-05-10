@@ -16,8 +16,7 @@ const projects = [
     imageAlt: 'Screenshot of the bird avatar generator',
     description:
       'A small, more focused wiki for the game Noita based on the in-game progress screen',
-    liveDemo: 'https://bird-avatars.jacoblong.dev',
-    // source: 'https://github.com/Jclong98/bird-avatars',
+    liveDemo: 'https://noita-helper.jacoblong.dev',
   },
   {
     title: 'jacoblong.dev',
