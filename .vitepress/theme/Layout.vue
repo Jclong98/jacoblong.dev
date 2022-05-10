@@ -16,6 +16,13 @@ const links = [
     icon: 'mdi:notebook',
     showName: true,
   },
+  {
+    name: 'Projects',
+    title: 'Projects',
+    href: '/projects',
+    icon: 'mdi:code-braces',
+    showName: true,
+  },
   // {
   //   name: 'About',
   //   title: 'About',
@@ -64,7 +71,7 @@ const links = [
       <ul class="flex gap-4 items-center">
         <li v-for="link in links" :key="link.name">
           <a :href="link.href" :title="link.title" class="text-xl">
-            <span :class="{ 'sr-only': !link.showName }">
+            <span :class="[{ 'sr-only': !link.showName }, 'hidden sm:inline']">
               {{ link.name }}
             </span>
             <Icon class="inline text-2xl ml-1" :icon="link.icon" />
