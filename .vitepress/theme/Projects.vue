@@ -76,7 +76,7 @@ const projects = [
           <a
             :href="project.source"
             aria-label="Source"
-            class="btn px-8 text-center"
+            class="btn px-8 text-center dark:bg-stone-800"
           >
             Source
             <Icon icon="mdi:code-braces" class="inline" />
