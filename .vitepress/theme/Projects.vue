@@ -4,8 +4,7 @@ import { ref, computed } from 'vue'
 const projects = [
   {
     title: 'Bird Avatar Generator',
-    image:
-      'https://camo.githubusercontent.com/551125749962fedaf6ac7082be8bdd31add122aec243335990aca887a7c2ee1d/68747470733a2f2f692e696d6775722e636f6d2f426a65314736522e706e67',
+    image: '/BirdAvatarCard.svg',
     imageAlt: 'Screenshot of the bird avatar generator',
     description:
       'A fun bird generator loosely based on the bird designs of Kurzgesagt made with Vue 3, Nuxt 3, UnoCSS, and TypeScript.',
@@ -33,8 +32,7 @@ const projects = [
   },
   {
     title: 'Todo React',
-    image:
-      'https://camo.githubusercontent.com/987fb540fb4dc43a8851fe442e8b0aebbcdde821c01f11fcf91872fc6ca26fad/68747470733a2f2f692e696d6775722e636f6d2f713866554233782e706e67',
+    image: '/TodoReact.svg',
     imageAlt: 'Screenshot of the Todo React Application',
     description:
       'Solution to the Frontend Mentor Todo Challenge. A todo list made with Vite, React, usehooks-ts, react-sortablejs, and TypeScript. I made this to learn React. Saves todo items to local storage.',
@@ -44,8 +42,7 @@ const projects = [
   },
   {
     title: 'Todo Vue',
-    image:
-      'https://camo.githubusercontent.com/987fb540fb4dc43a8851fe442e8b0aebbcdde821c01f11fcf91872fc6ca26fad/68747470733a2f2f692e696d6775722e636f6d2f713866554233782e706e67',
+    image: '/TodoVue.svg',
     imageAlt: 'Screenshot of the Todo Vue Application',
     description:
       'Solution to the Frontend Mentor Todo Challenge. A todo list made with Vite, Vue 3, VueUse, VueDraggable, and TypeScript. I made this as a comparison to the Todo-React project. They behave exactly the same. Saves todo items to local storage.',
