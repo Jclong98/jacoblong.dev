@@ -31,7 +31,7 @@ import RecentPosts from './RecentPosts.vue'
       </p>
     </div>
 
-    <hr class="border-gray-300 dark:border-stone-700" />
+    <hr class="border-stone-300 dark:border-stone-700" />
 
     <RecentPosts />
   </div>
