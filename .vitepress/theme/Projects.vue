@@ -85,7 +85,7 @@ const projects = [
       <div class="flex flex-col justify-between grow sm:max-w-[400px]">
         <!-- title and description -->
         <div class="grid gap-2">
-          <h2 class="text-3xl">
+          <h2 class="text-3xl font-semibold">
             <a :href="project.liveDemo">{{ project.title }}</a>
           </h2>
           <p>{{ project.description }}</p>
@@ -109,7 +109,7 @@ const projects = [
             v-if="project.source"
             :href="project.source"
             aria-label="Source"
-            class="btn px-8 text-center dark:bg-stone-800"
+            class="btn px-8 text-center dark:border dark:text-amber-400 font-semibold"
           >
             Source
             <Icon icon="mdi:code-braces" class="inline" />
