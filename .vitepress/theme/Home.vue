@@ -15,7 +15,7 @@ import RecentPosts from './RecentPosts.vue'
     <div>
       <a
         href="/projects"
-        class="btn group btn px-8 text-center bg-amber-300 dark:bg-amber-400 text-black font-semibold"
+        class="btn group btn px-8 text-center bg-amber-300 text-black font-semibold dark:border dark:text-amber-400 dark:bg-transparent"
       >
         Check out some of my projects
         <Icon icon="mdi:arrow-right" class="inline" />
