@@ -11,6 +11,15 @@ const projects = [
     source: 'https://github.com/Jclong98/bird-avatars',
   },
   {
+    title: 'Noita Helper (WIP)',
+    image: 'https://i.imgur.com/5UPSNZU.png',
+    imageAlt: 'Screenshot of the bird avatar generator',
+    description:
+      'A small, more focused wiki for the game Noita based on the in-game progress screen',
+    liveDemo: 'https://bird-avatars.jacoblong.dev',
+    // source: 'https://github.com/Jclong98/bird-avatars',
+  },
+  {
     title: 'jacoblong.dev',
     image: 'https://jacoblong.dev/og_image.png',
     imageAlt: 'My personal logo',
@@ -73,7 +82,9 @@ const projects = [
 
         <!-- actions -->
         <div class="grid sm:grid-cols-2 gap-4 mt-6">
+          <!-- Source -->
           <a
+            v-if="project.source"
             :href="project.source"
             aria-label="Source"
             class="btn px-8 text-center dark:bg-stone-800"
@@ -81,7 +92,10 @@ const projects = [
             Source
             <Icon icon="mdi:code-braces" class="inline" />
           </a>
+
+          <!-- Live Demo -->
           <a
+            v-if="project.liveDemo"
             :href="project.liveDemo"
             aria-label="Live Demo"
             class="text-center rounded-lg bg-amber-300 dark:bg-amber-400 text-black font-semibold p-4 shadow-lg px-8"
