@@ -6,7 +6,7 @@ const projects = [
       'https://camo.githubusercontent.com/551125749962fedaf6ac7082be8bdd31add122aec243335990aca887a7c2ee1d/68747470733a2f2f692e696d6775722e636f6d2f426a65314736522e706e67',
     imageAlt: 'Screenshot of the bird avatar generator',
     description:
-      'A fun bird generator loosely based on the bird designs of Kurzgesagt made with Vue 3, Nuxt 3, UnoCSS, and TypeScript',
+      'A fun bird generator loosely based on the bird designs of Kurzgesagt made with Vue 3, Nuxt 3, UnoCSS, and TypeScript.',
     liveDemo: 'https://bird-avatars.jacoblong.dev',
     source: 'https://github.com/Jclong98/bird-avatars',
   },
@@ -15,14 +15,14 @@ const projects = [
     image: 'https://i.imgur.com/5UPSNZU.png',
     imageAlt: 'Screenshot of the bird avatar generator',
     description:
-      'A small, more focused wiki for the game Noita based on the in-game progress screen',
+      'A small, more focused wiki for the game Noita based on the in-game progress screen. Made with Nuxt 3.',
     liveDemo: 'https://noita-helper.jacoblong.dev',
   },
   {
     title: 'jacoblong.dev',
     image: 'https://jacoblong.dev/og_image.png',
     imageAlt: 'My personal logo',
-    description: 'My personal website made with VitePress, Vue 3, and UnoCSS',
+    description: 'My personal website made with VitePress, Vue 3, and UnoCSS.',
     liveDemo: 'https://jacoblong.dev',
     source: 'https://github.com/Jclong98/jacoblong.dev',
   },
