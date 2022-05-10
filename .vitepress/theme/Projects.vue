@@ -4,7 +4,7 @@ import { ref, computed } from 'vue'
 const projects = [
   {
     title: 'Bird Avatar Generator',
-    image: '/BirdAvatarCard.svg',
+    image: '/card-bird-avatar.png',
     imageAlt: 'Screenshot of the bird avatar generator',
     description:
       'A fun bird generator loosely based on the bird designs of Kurzgesagt made with Vue 3, Nuxt 3, UnoCSS, and TypeScript.',
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: 'jacoblong.dev',
-    image: 'https://jacoblong.dev/og_image.png',
+    image: '/og_image.png',
     imageAlt: 'My personal logo',
     description: 'My personal website made with VitePress, Vue 3, and UnoCSS.',
     liveDemo: 'https://jacoblong.dev',
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     title: 'Todo React',
-    image: '/TodoReact.svg',
+    image: '/card-todo-react.png',
     imageAlt: 'Screenshot of the Todo React Application',
     description:
       'Solution to the Frontend Mentor Todo Challenge. A todo list made with Vite, React, usehooks-ts, react-sortablejs, and TypeScript. I made this to learn React. Saves todo items to local storage.',
@@ -42,7 +42,7 @@ const projects = [
   },
   {
     title: 'Todo Vue',
-    image: '/TodoVue.svg',
+    image: '/card-todo-vue.png',
     imageAlt: 'Screenshot of the Todo Vue Application',
     description:
       'Solution to the Frontend Mentor Todo Challenge. A todo list made with Vite, Vue 3, VueUse, VueDraggable, and TypeScript. I made this as a comparison to the Todo-React project. They behave exactly the same. Saves todo items to local storage.',
@@ -52,8 +52,7 @@ const projects = [
   },
   {
     title: 'Advice Generator App',
-    image:
-      'https://camo.githubusercontent.com/2e22a20da3387dc537b285ad55bb21486f436d7994d1616c8def556bce7b2b29/68747470733a2f2f692e696d6775722e636f6d2f7433506e394e682e706e67',
+    image: '/card-advice-generator.png',
     imageAlt: 'Screenshot of the Advice Generator Application',
     description:
       'Solution to the Frontend Mentor Advice Generator Application Challenge. A Simple one button application that makes a request to an external API. Made with Vite, React, and UnoCSS.',
