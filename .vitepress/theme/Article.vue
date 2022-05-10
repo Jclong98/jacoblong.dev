@@ -37,7 +37,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
     >
       <div class="grid sm:grid-cols-2 gap-4">
         <!-- Previous Post -->
-        <a v-if="prevPost" :href="prevPost.href" class="btn-stone">
+        <a v-if="prevPost" :href="prevPost.href" class="btn">
           <h2 class="text-stone-500 dark:text-stone-500">
             <Icon icon="mdi:arrow-left" class="inline" />
             Previous Post
@@ -46,12 +46,12 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
             {{ prevPost.title }}
           </div>
         </a>
-        <div v-else class="flex items-center opacity-40 btn-stone">
+        <div v-else class="flex items-center opacity-40 btn">
           <p>No Previous Posts</p>
         </div>
 
         <!-- Next Post -->
-        <a v-if="nextPost" :href="nextPost.href" class="btn-stone">
+        <a v-if="nextPost" :href="nextPost.href" class="btn">
           <h2 class="text-stone-500 dark:text-stone-500">
             Next Post
             <Icon icon="mdi:arrow-right" class="inline" />
@@ -60,12 +60,12 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
             {{ nextPost.title }}
           </div>
         </a>
-        <div v-else class="flex items-center opacity-40 btn-stone">
+        <div v-else class="flex items-center opacity-40 btn">
           <p>Check back later for more content 🙂</p>
         </div>
 
         <!-- Back to blog button -->
-        <a href="/posts" class="btn-stone sm:col-span-2">
+        <a href="/posts" class="btn sm:col-span-2">
           <Icon icon="mdi:arrow-left" class="inline" />
           Back to the blog
         </a>
