@@ -2,16 +2,27 @@
 import RecentPosts from './RecentPosts.vue'
 </script>
 <template>
-  <div>
-    <div class="text-2xl my-8">
+  <div class="grid gap-4">
+    <div class="text-2xl my-6">
       <p>
         Hi, I'm Jacob Long.
         <br />
         I like to make websites 😀
+        <br />
       </p>
     </div>
 
-    <div class="prose dark:prose-invert mb-8">
+    <div>
+      <a
+        href="/projects"
+        class="btn group btn px-8 text-center bg-amber-300 dark:bg-amber-400 text-black font-semibold"
+      >
+        Check out some of my projects
+        <Icon icon="mdi:arrow-right" class="inline" />
+      </a>
+    </div>
+
+    <div class="prose dark:prose-invert">
       <p>
         Find my work on <a href="https://github.com/jclong98">GitHub</a> <br />
         Connect on

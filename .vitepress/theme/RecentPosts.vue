@@ -6,7 +6,7 @@ const recentPosts = posts.slice(0, 3)
 </script>
 <template>
   <div>
-    <h2 class="text-2xl mt-8 mb-4">Recent Blog Posts</h2>
+    <h2 class="text-2xl mb-4">Recent Blog Posts</h2>
 
     <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
       <li v-for="{ title, href, date, excerpt } of recentPosts" class="card">
