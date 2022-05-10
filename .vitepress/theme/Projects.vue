@@ -93,17 +93,6 @@ const projects = [
 
         <!-- actions -->
         <div class="grid sm:grid-cols-2 gap-4 mt-6">
-          <!-- Source -->
-          <a
-            v-if="project.source"
-            :href="project.source"
-            aria-label="Source"
-            class="btn px-8 text-center dark:bg-stone-800"
-          >
-            Source
-            <Icon icon="mdi:code-braces" class="inline" />
-          </a>
-
           <!-- Live Demo -->
           <a
             v-if="project.liveDemo"
@@ -113,6 +102,17 @@ const projects = [
           >
             Live Demo
             <Icon icon="mdi:open-in-new" class="inline" />
+          </a>
+
+          <!-- Source -->
+          <a
+            v-if="project.source"
+            :href="project.source"
+            aria-label="Source"
+            class="btn px-8 text-center dark:bg-stone-800"
+          >
+            Source
+            <Icon icon="mdi:code-braces" class="inline" />
           </a>
         </div>
       </div>
