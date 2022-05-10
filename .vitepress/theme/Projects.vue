@@ -47,7 +47,7 @@ const projects = [
     source: 'https://github.com/jclong98/todo-vue',
   },
   {
-    title: 'Frontend Mentor - Advice Generator App',
+    title: 'Advice Generator App',
     image:
       'https://camo.githubusercontent.com/2e22a20da3387dc537b285ad55bb21486f436d7994d1616c8def556bce7b2b29/68747470733a2f2f692e696d6775722e636f6d2f7433506e394e682e706e67',
     imageAlt: 'Screenshot of the Advice Generator Application',
