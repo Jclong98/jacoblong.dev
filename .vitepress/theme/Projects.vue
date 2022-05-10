@@ -68,7 +68,10 @@ const projects = [
       class="card my-8 grid gap-6 justify-between mt-14 md:mt-8 md:grid-cols-3"
     >
       <!-- Image -->
-      <a :href="project.liveDemo" class="flex md:w-5/4 md:-translate-x-1/5">
+      <a
+        :href="project.liveDemo"
+        class="flex md:w-5/4 md:-translate-x-1/5 rounded-lg shadow-lg"
+      >
         <img
           :src="project.image"
           :alt="project.imageAlt"
