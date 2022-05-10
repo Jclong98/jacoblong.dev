@@ -85,7 +85,9 @@ const projects = [
       <div class="flex flex-col justify-between grow sm:max-w-[400px]">
         <!-- title and description -->
         <div class="grid gap-2">
-          <h2 class="text-3xl">{{ project.title }}</h2>
+          <h2 class="text-3xl">
+            <a :href="project.liveDemo">{{ project.title }}</a>
+          </h2>
           <p>{{ project.description }}</p>
         </div>
 
