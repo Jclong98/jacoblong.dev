@@ -6,6 +6,7 @@ const projects = [
     title: 'Bird Avatar Generator',
     image:
       'https://camo.githubusercontent.com/551125749962fedaf6ac7082be8bdd31add122aec243335990aca887a7c2ee1d/68747470733a2f2f692e696d6775722e636f6d2f426a65314736522e706e67',
+    imageAlt: 'Screenshot of the bird avatar generator',
     description:
       'A fun bird generator loosely based on the bird designs of Kurzgesagt made with Vue 3, Nuxt 3, UnoCSS, and TypeScript',
     liveDemo: 'https://bird-avatars.jacoblong.dev',
@@ -15,6 +16,7 @@ const projects = [
     title: 'jacoblong.dev',
     // image: 'https://i.imgur.com/8VIq1r9.png',
     image: jacobLongDevImg,
+    imageAlt: 'My personal logo',
     description: 'My personal website made with VitePress, Vue 3, and UnoCSS',
     liveDemo: 'https://jacoblong.dev',
     source: 'https://github.com/Jclong98/jacoblong.dev',
@@ -23,6 +25,7 @@ const projects = [
     title: 'Todo React',
     image:
       'https://camo.githubusercontent.com/987fb540fb4dc43a8851fe442e8b0aebbcdde821c01f11fcf91872fc6ca26fad/68747470733a2f2f692e696d6775722e636f6d2f713866554233782e706e67',
+    imageAlt: 'Screenshot of the Todo React Application',
     description:
       'Solution to the Frontend Mentor Todo Challenge. A todo list made with Vite, React, usehooks-ts, react-sortablejs, and TypeScript. I made this to learn React. Saves todo items to local storage.',
     liveDemo: 'https://gleaming-alpaca-bd8b47.netlify.app/',
@@ -32,6 +35,7 @@ const projects = [
     title: 'Todo Vue',
     image:
       'https://camo.githubusercontent.com/987fb540fb4dc43a8851fe442e8b0aebbcdde821c01f11fcf91872fc6ca26fad/68747470733a2f2f692e696d6775722e636f6d2f713866554233782e706e67',
+    imageAlt: 'Screenshot of the Todo Vue Application',
     description:
       'Solution to the Frontend Mentor Todo Challenge. A todo list made with Vite, Vue 3, VueUse, VueDraggable, and TypeScript. I made this as a comparison to the Todo-React project. They behave exactly the same. Saves todo items to local storage.',
     liveDemo: 'https://dreamy-bavarois-f624c2.netlify.app/',
@@ -50,16 +54,17 @@ const projects = [
       :class="{ 'sm:flex-row-reverse': index % 2 === 0 }"
     >
       <!-- Image -->
-      <div
+      <a
+        :href="project.liveDemo"
         class="rounded-lg sm:w-[300px] sm:h-[200px] shadow-lg -translate-y-12 -mb-8 sm:mb-0"
         :class="[index % 2 === 0 ? 'md:translate-x-12' : 'md:-translate-x-12']"
       >
         <img
           :src="project.image"
-          alt=""
+          :alt="project.imageAlt"
           class="object-cover rounded-lg sm:h-[200px] sm:w-[300px]"
         />
-      </div>
+      </a>
 
       <!-- Text & actions -->
       <div class="flex flex-col justify-between grow sm:max-w-[400px]">
