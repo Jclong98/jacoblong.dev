@@ -98,7 +98,7 @@ const projects = [
             v-if="project.liveDemo"
             :href="project.liveDemo"
             aria-label="Live Demo"
-            class="text-center rounded-lg bg-amber-300 dark:bg-amber-400 text-black font-semibold p-4 shadow-lg px-8"
+            class="btn px-8 text-center bg-amber-300 dark:bg-amber-400 text-black font-semibold"
           >
             Live Demo
             <Icon icon="mdi:open-in-new" class="inline" />

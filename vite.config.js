@@ -6,7 +6,9 @@ export default {
   plugins: [
     Unocss({
       shortcuts: [
-        { btn: 'rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg' },
+        {
+          btn: 'rounded-lg bg-gray-100 dark:bg-stone-900 p-4 shadow-lg transition duration-200 active:scale-90',
+        },
         { card: 'bg-white dark:bg-stone-900 rounded-lg p-4 shadow-lg' },
       ],
       presets: [
