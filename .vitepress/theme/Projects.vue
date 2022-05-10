@@ -46,6 +46,16 @@ const projects = [
     liveDemo: 'https://dreamy-bavarois-f624c2.netlify.app/',
     source: 'https://github.com/jclong98/todo-vue',
   },
+  {
+    title: 'Frontend Mentor - Advice Generator App',
+    image:
+      'https://camo.githubusercontent.com/2e22a20da3387dc537b285ad55bb21486f436d7994d1616c8def556bce7b2b29/68747470733a2f2f692e696d6775722e636f6d2f7433506e394e682e706e67',
+    imageAlt: 'Screenshot of the Advice Generator Application',
+    description:
+      'Solution to the Frontend Mentor Advice Generator Application Challenge. A Simple one button application that makes a request to an external API. Made with Vite, React, and UnoCSS.',
+    liveDemo: 'https://beautiful-kitsune-fe1c9f.netlify.app',
+    source: 'https://github.com/Jclong98/Frontend-Mentor-Advice-App',
+  },
 ]
 </script>
 <template>
