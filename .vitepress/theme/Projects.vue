@@ -1,6 +1,4 @@
 <script setup>
-import jacobLongDevImg from '../../public/og_image.png'
-
 const projects = [
   {
     title: 'Bird Avatar Generator',
@@ -14,8 +12,7 @@ const projects = [
   },
   {
     title: 'jacoblong.dev',
-    // image: 'https://i.imgur.com/8VIq1r9.png',
-    image: jacobLongDevImg,
+    image: 'https://jacoblong.dev/og_image.png',
     imageAlt: 'My personal logo',
     description: 'My personal website made with VitePress, Vue 3, and UnoCSS',
     liveDemo: 'https://jacoblong.dev',
