@@ -7,7 +7,7 @@ const projects = [
     image: '/card-bird-avatar.png',
     imageAlt: 'Screenshot of the bird avatar generator',
     description:
-      'A fun bird generator loosely based on the bird designs of Kurzgesagt made with Vue 3, Nuxt 3, UnoCSS, and TypeScript.',
+      'A fun bird generator loosely based on the bird designs of Kurzgesagt made with Vue 3, Nuxt 3, UnoCSS, and TypeScript. Testing done with Vitest.',
     liveDemo: 'https://bird-avatars.jacoblong.dev',
     source: 'https://github.com/Jclong98/bird-avatars',
     tags: ['Vue 3', 'Nuxt 3', 'UnoCSS', 'TypeScript'],
