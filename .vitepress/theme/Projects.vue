@@ -60,6 +60,16 @@ const projects = [
     source: 'https://github.com/Jclong98/Frontend-Mentor-Advice-App',
     tags: ['Vite', 'React', 'UnoCSS', 'TypeScript'],
   },
+  {
+    title: 'Boids',
+    image: 'https://i.imgur.com/YhK2Fox.png',
+    imageAlt: 'Screenshot of the Boids Application',
+    description:
+      'A boids implementation with reactive sliders to play around with the simulation.',
+    liveDemo: 'https://boids.jacoblong.dev',
+    source: 'https://github.com/jclong98/boids-vue',
+    tags: ['Vite', 'Vue 3'],
+  },
 ]
 
 const uniqueTags = projects
