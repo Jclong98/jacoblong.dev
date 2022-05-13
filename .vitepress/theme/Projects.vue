@@ -132,6 +132,7 @@ const filteredProjects = computed(() =>
           :src="project.image"
           :alt="project.imageAlt"
           class="object-cover rounded-lg -translate-y-12 -mb-12 md:translate-y-0 md:mb-0 border dark:border-stone-500"
+          loading="lazy"
         />
       </a>
 
