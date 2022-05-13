@@ -1,15 +1,10 @@
 <script setup>
 import { computed } from 'vue'
-
-const props = defineProps({
-  dark: {
-    type: Boolean,
-    default: false,
-  },
-})
+import { useDark } from '@vueuse/core'
+const isDark = useDark()
 
 const fillColor = computed(() => {
-  return props.dark ? 'transparent' : '#fcd34c'
+  return isDark.value ? 'transparent' : 'transparent'
 })
 </script>
 

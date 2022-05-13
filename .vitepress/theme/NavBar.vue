@@ -1,11 +1,6 @@
 <script setup>
-import { useDark, useToggle } from '@vueuse/core'
-
 import DarkToggle from './DarkToggle.vue'
 import Logo from './Logo.vue'
-
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
 
 const links = [
   {
@@ -63,7 +58,7 @@ const links = [
 <template>
   <nav class="flex justify-between my-6">
     <a href="/" aria-label="Home">
-      <Logo class="w-[50px] h-50px" :dark="isDark" />
+      <Logo class="w-[50px] h-50px" />
     </a>
 
     <ul class="flex gap-4 items-center">
@@ -77,7 +72,7 @@ const links = [
       </li>
 
       <li>
-        <DarkToggle @click="toggleDark()" :dark="isDark" />
+        <DarkToggle />
       </li>
     </ul>
   </nav>
