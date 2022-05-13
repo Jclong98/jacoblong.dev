@@ -95,9 +95,8 @@ const links = [
       <a
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
         class="underline"
+        >CC BY-NC-SA 4.0</a
       >
-        CC BY-NC-SA 4.0
-      </a>
       2022-PRESENT © Jacob Long
     </footer>
   </div>
