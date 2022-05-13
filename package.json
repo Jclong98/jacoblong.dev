@@ -8,7 +8,7 @@
     "serve": "vitepress serve"
   },
   "devDependencies": {
-    "@iconify/vue": "^3.2.1",
+    "@iconify-json/iconoir": "^1.1.5",
     "@unocss/preset-typography": "^0.33.0",
     "gray-matter": "^4.0.2",
     "unocss": "^0.33.0",

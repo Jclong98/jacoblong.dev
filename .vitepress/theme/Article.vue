@@ -45,7 +45,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           class="btn border dark:border-stone-500"
         >
           <h2 class="text-stone-500 dark:text-stone-500">
-            <Icon icon="mdi:arrow-left" class="inline" />
+            <i class="i-iconoir-arrow-left"></i>
             Previous Post
           </h2>
           <div class="text-xl">
@@ -67,7 +67,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
         >
           <h2 class="text-stone-500 dark:text-stone-500">
             Next Post
-            <Icon icon="mdi:arrow-right" class="inline" />
+            <i class="i-iconoir-arrow-right"></i>
           </h2>
           <div class="text-xl">
             {{ nextPost.title }}
@@ -82,7 +82,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 
         <!-- Back to blog button -->
         <a href="/posts" class="btn sm:col-span-2 border dark:border-stone-500">
-          <Icon icon="mdi:arrow-left" class="inline" />
+          <i class="i-iconoir-arrow-left"></i>
           Back to the blog
         </a>
       </div>

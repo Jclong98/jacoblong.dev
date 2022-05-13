@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@iconify/vue': ^3.2.1
+  '@iconify-json/iconoir': ^1.1.5
   '@unocss/preset-typography': ^0.33.0
   '@unocss/reset': ^0.33.0
   '@vueuse/core': ^8.4.2
@@ -14,7 +14,7 @@ dependencies:
   '@vueuse/core': 8.4.2
 
 devDependencies:
-  '@iconify/vue': 3.2.1
+  '@iconify-json/iconoir': 1.1.5
   '@unocss/preset-typography': 0.33.0
   gray-matter: 4.0.3
   unocss: 0.33.0
@@ -195,6 +195,12 @@ packages:
       - '@algolia/client-search'
     dev: true
 
+  /@iconify-json/iconoir/1.1.5:
+    resolution: {integrity: sha512-QeSxKXbsEOE5cemoEsDxhWJMuvgUB+6+IwlsurChhfnuui4QCMTb2iIV6ZY7XMQFTJKCvkPcLYj/1QY109PG+w==}
+    dependencies:
+      '@iconify/types': 1.1.0
+    dev: true
+
   /@iconify/types/1.1.0:
     resolution: {integrity: sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==}
     dev: true
@@ -210,12 +216,6 @@ packages:
       local-pkg: 0.4.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@iconify/vue/3.2.1:
-    resolution: {integrity: sha512-c4R6ZgFo1JrJ8aPMMgOPgfU7lBswihMGR+yWe/P4ZukC3kTkeT4+lkt9Pc/itVFMkwva/S/7u9YofmYv57fnNQ==}
-    peerDependencies:
-      vue: 3.x
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:

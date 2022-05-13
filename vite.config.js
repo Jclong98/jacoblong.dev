@@ -1,6 +1,5 @@
 import Unocss from 'unocss/vite'
-import { presetUno } from 'unocss'
-import { presetTypography } from '@unocss/preset-typography'
+import { presetUno, presetIcons, presetTypography } from 'unocss'
 
 export default {
   plugins: [
@@ -13,6 +12,13 @@ export default {
       ],
       presets: [
         presetUno(),
+        presetIcons({
+          scale: 1.25,
+          extraProperties: {
+            display: 'inline-block',
+            'vertical-align': 'middle',
+          },
+        }),
         presetTypography({
           cssExtend: {
             hr: {

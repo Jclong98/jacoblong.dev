@@ -10,10 +10,8 @@ const toggleDark = useToggle(isDark)
     @click="toggleDark()"
     aria-label="Toggle Dark Mode"
     title="Toggle Dark Mode"
+    class="text-xl"
   >
-    <Icon
-      :icon="isDark ? 'mdi:brightness-7' : 'mdi:moon-waning-crescent'"
-      class="inline text-2xl ml-1 -rotate-45"
-    />
+    <i :class="isDark ? 'i-iconoir-sun-light' : 'i-iconoir-half-moon'"></i>
   </button>
 </template>

@@ -155,7 +155,7 @@ const filteredProjects = computed(() =>
             class="btn px-8 text-center bg-amber-300 dark:text-amber-400 text-black font-semibold border"
           >
             Live Demo
-            <Icon icon="mdi:open-in-new" class="inline" />
+            <i class="i-iconoir-open-new-window ml-1"></i>
           </a>
 
           <!-- Source -->
@@ -166,7 +166,7 @@ const filteredProjects = computed(() =>
             class="btn px-8 text-center font-semibold border dark:border-stone-500"
           >
             Source
-            <Icon icon="mdi:code-braces" class="inline" />
+            <i class="i-iconoir-code-brackets ml-1"></i>
           </a>
         </div>
 
