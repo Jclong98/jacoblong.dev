@@ -9,7 +9,7 @@ const props = defineProps({
 })
 
 const fillColor = computed(() => {
-  return props.dark ? '' : '#fcd34c'
+  return props.dark ? 'transparent' : '#fcd34c'
 })
 </script>
 
