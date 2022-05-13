@@ -31,6 +31,16 @@ const projects = [
     tags: ['Vite', 'Vue 3', 'UnoCSS'],
   },
   {
+    title: 'Boids',
+    image: 'https://i.imgur.com/YhK2Fox.png',
+    imageAlt: 'Screenshot of the Boids Application',
+    description:
+      'A boids implementation with reactive sliders to play around with the simulation.',
+    liveDemo: 'https://boids.jacoblong.dev',
+    source: 'https://github.com/jclong98/boids-vue',
+    tags: ['Vite', 'Vue 3'],
+  },
+  {
     title: 'Todo React',
     image: '/card-todo-react.png',
     imageAlt: 'Screenshot of the Todo React Application',
@@ -59,16 +69,6 @@ const projects = [
     liveDemo: 'https://beautiful-kitsune-fe1c9f.netlify.app',
     source: 'https://github.com/Jclong98/Frontend-Mentor-Advice-App',
     tags: ['Vite', 'React', 'UnoCSS', 'TypeScript'],
-  },
-  {
-    title: 'Boids',
-    image: 'https://i.imgur.com/YhK2Fox.png',
-    imageAlt: 'Screenshot of the Boids Application',
-    description:
-      'A boids implementation with reactive sliders to play around with the simulation.',
-    liveDemo: 'https://boids.jacoblong.dev',
-    source: 'https://github.com/jclong98/boids-vue',
-    tags: ['Vite', 'Vue 3'],
   },
 ]
 
