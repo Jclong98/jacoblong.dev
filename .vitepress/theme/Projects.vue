@@ -152,7 +152,7 @@ const filteredProjects = computed(() =>
             v-if="project.liveDemo"
             :href="project.liveDemo"
             aria-label="Live Demo"
-            class="btn px-8 text-center bg-amber-300 dark:bg-amber-400 text-black font-semibold border dark:border-stone-500"
+            class="btn px-8 text-center bg-amber-300 dark:text-amber-400 text-black font-semibold border"
           >
             Live Demo
             <Icon icon="mdi:open-in-new" class="inline" />
@@ -163,7 +163,7 @@ const filteredProjects = computed(() =>
             v-if="project.source"
             :href="project.source"
             aria-label="Source"
-            class="btn px-8 text-center dark:text-amber-400 font-semibold border dark:border-stone-500"
+            class="btn px-8 text-center font-semibold border dark:border-stone-500"
           >
             Source
             <Icon icon="mdi:code-braces" class="inline" />
