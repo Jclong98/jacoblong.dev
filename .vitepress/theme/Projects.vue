@@ -19,7 +19,7 @@ const projects = [
     description:
       'A small, more focused wiki for the game Noita based on the in-game progress screen. Made with Nuxt 3.',
     liveDemo: 'https://noita-helper.jacoblong.dev',
-    tags: ['Nuxt 3'],
+    tags: ['Vue 3', 'Nuxt 3'],
   },
   {
     title: 'jacoblong.dev',
