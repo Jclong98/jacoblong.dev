@@ -126,7 +126,7 @@ const filteredProjects = computed(() =>
       <!-- Image -->
       <a
         :href="project.liveDemo"
-        class="flex md:w-5/4 md:-translate-x-1/5 rounded-lg shadow-lg"
+        class="flex md:w-5/4 md:-translate-x-1/5 rounded-lg"
       >
         <img
           :src="project.image"
