@@ -1,5 +1,10 @@
 import Unocss from 'unocss/vite'
-import { presetUno, presetIcons, presetTypography } from 'unocss'
+import {
+  presetUno,
+  presetIcons,
+  presetTypography,
+  presetWebFonts,
+} from 'unocss'
 
 export default {
   plugins: [
@@ -17,6 +22,12 @@ export default {
           extraProperties: {
             display: 'inline-block',
             'vertical-align': 'middle',
+          },
+        }),
+        presetWebFonts({
+          provider: 'google',
+          fonts: {
+            'jetbrains-mono': 'JetBrains Mono',
           },
         }),
         presetTypography({

@@ -91,7 +91,7 @@ const filteredProjects = computed(() =>
 </script>
 <template>
   <div class="grid gap-8 mb-8">
-    <h1 class="text-5xl">Projects</h1>
+    <h1 class="text-5xl font-jetbrains-mono">Projects</h1>
 
     <div class="flex flex-wrap gap-4">
       <div v-for="tag in uniqueTags" :key="tag">

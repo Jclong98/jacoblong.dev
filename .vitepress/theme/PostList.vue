@@ -4,7 +4,7 @@ import { data as posts } from '../posts.data'
 </script>
 <template>
   <div>
-    <h1 class="text-5xl">Blog</h1>
+    <h1 class="text-5xl font-jetbrains-mono">Blog</h1>
 
     <ul>
       <li
