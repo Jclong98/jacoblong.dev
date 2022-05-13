@@ -10,7 +10,7 @@ Replacing [TailwindCSS](https://tailwindcss.com/) with [UnoCSS](https://github.c
 
 [[toc]]
 
-In a previous blogpost I had mentioned wanting to use UnoCSS to style my site, but I ended up using TailwindCSS because I didn't think that VitePress had the ability to use Vite plugins. I was happy to learn that I was mistaken when I found [this github issue https://github.com/vuejs/vitepress/issues/189](https://github.com/vuejs/vitepress/issues/189).
+In a previous blogpost I had mentioned wanting to use UnoCSS to style my site, but I ended up using TailwindCSS because I didn't think that VitePress had the ability to use Vite plugins. I was happy to learn that I was mistaken when I found [this github issue](https://github.com/vuejs/vitepress/issues/189).
 
 Basically, this issue asks that `vite.config.js` be loaded and used by VitePress, allowing the use of other Vite plugins, thus enabling the use of UnoCSS and many other Vite plugins should I choose to use any in the future 😁
 

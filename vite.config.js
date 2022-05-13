@@ -27,7 +27,14 @@ export default {
               background: '#f3f4f6',
             },
             'html.dark pre': {
-              background: '#1c1917',
+              background: '#000',
+            },
+            img: {
+              margin: '1rem auto',
+              border: '1px solid black',
+            },
+            'html.dark img': {
+              border: '1px solid rgba(120, 113, 108)',
             },
           },
         }),
