@@ -20,7 +20,7 @@ const isPost = computed(() => route.path.includes('/posts/'))
       <Article v-else />
     </main>
 
-    <footer>
+    <footer class="opacity-65">
       <a
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
         class="underline"
