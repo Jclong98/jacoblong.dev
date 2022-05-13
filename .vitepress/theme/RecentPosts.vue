@@ -9,7 +9,10 @@ const recentPosts = posts.slice(0, 3)
     <h2 class="text-2xl mb-4">Recent Blog Posts</h2>
 
     <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <li v-for="{ title, href, date, excerpt } of recentPosts" class="card">
+      <li
+        v-for="{ title, href, date, excerpt } of recentPosts"
+        class="card border dark:border-stone-500"
+      >
         <article class="h-full flex flex-col justify-between">
           <div>
             <Date :date="date" />

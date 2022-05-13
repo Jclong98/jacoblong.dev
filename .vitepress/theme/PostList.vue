@@ -7,7 +7,10 @@ import { data as posts } from '../posts.data'
     <h1 class="text-5xl">Blog</h1>
 
     <ul>
-      <li v-for="{ title, href, date, excerpt } of posts" class="my-6">
+      <li
+        v-for="{ title, href, date, excerpt } of posts"
+        class="my-6 rounded-lg border dark:border-stone-500"
+      >
         <a :href="href">
           <article class="card grid">
             <Date :date="date" />

@@ -105,7 +105,7 @@ const filteredProjects = computed(() =>
         />
         <label
           :for="tag"
-          class="btn px-6 cursor-pointer flex gap-2 items-center py-2 rounded-full text-sm font-medium dark:bg-stone-800 select-none group peer-focus:ring-2 peer-focus:ring-amber-400"
+          class="btn px-6 cursor-pointer flex gap-2 items-center py-2 rounded-full text-sm font-medium bg-stone-200 dark:bg-stone-800 select-none group peer-focus:ring-2 peer-focus:ring-amber-400 border dark:border-stone-500"
           :class="[
             {
               'dark:text-amber-400': selectedTags.includes(tag),
@@ -121,7 +121,7 @@ const filteredProjects = computed(() =>
     <article
       v-for="(project, index) in filteredProjects"
       :key="project.title"
-      class="card grid gap-6 justify-between mt-8 md:mt-0 md:grid-cols-3"
+      class="card grid gap-6 justify-between mt-8 md:mt-0 md:grid-cols-3 border dark:border-stone-500"
     >
       <!-- Image -->
       <a
@@ -131,7 +131,7 @@ const filteredProjects = computed(() =>
         <img
           :src="project.image"
           :alt="project.imageAlt"
-          class="object-cover rounded-lg -translate-y-12 -mb-12 md:translate-y-0 md:mb-0"
+          class="object-cover rounded-lg -translate-y-12 -mb-12 md:translate-y-0 md:mb-0 border dark:border-stone-500"
         />
       </a>
 
@@ -152,7 +152,7 @@ const filteredProjects = computed(() =>
             v-if="project.liveDemo"
             :href="project.liveDemo"
             aria-label="Live Demo"
-            class="btn px-8 text-center bg-amber-300 dark:bg-amber-400 text-black font-semibold"
+            class="btn px-8 text-center bg-amber-300 dark:bg-amber-400 text-black font-semibold border dark:border-stone-500"
           >
             Live Demo
             <Icon icon="mdi:open-in-new" class="inline" />
@@ -163,7 +163,7 @@ const filteredProjects = computed(() =>
             v-if="project.source"
             :href="project.source"
             aria-label="Source"
-            class="btn px-8 text-center dark:border dark:text-amber-400 font-semibold"
+            class="btn px-8 text-center dark:text-amber-400 font-semibold border dark:border-stone-500"
           >
             Source
             <Icon icon="mdi:code-braces" class="inline" />
@@ -175,7 +175,7 @@ const filteredProjects = computed(() =>
           <span
             v-for="tag in project.tags"
             :key="tag"
-            class="items-center px-4 py-1 rounded-full text-sm font-medium bg-stone-200 dark:bg-black dark:text-stone-300"
+            class="items-center px-4 py-1 rounded-full text-sm font-medium bg-stone-200 dark:bg-black dark:text-stone-300 border dark:border-stone-500"
           >
             {{ tag }}
           </span>
