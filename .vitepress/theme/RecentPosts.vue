@@ -1,5 +1,6 @@
 <script setup>
 import Date from './Date.vue'
+import Link from './Link.vue'
 import { data as posts } from '../posts.data'
 
 const recentPosts = posts.slice(0, 3)
@@ -28,19 +29,13 @@ const recentPosts = posts.slice(0, 3)
             ></div>
           </div>
 
-          <a aria-label="read more" :href="href">
-            Read more
-            <Icon icon="mdi:arrow-right" class="inline" />
-          </a>
+          <Link :href="href">Read More</Link>
         </article>
       </li>
     </ul>
 
     <div class="mt-4 mb-8">
-      <a href="/posts">
-        View All Blog Posts
-        <Icon icon="mdi:arrow-right" class="inline" />
-      </a>
+      <Link href="/posts">View All Blog Posts</Link>
     </div>
   </div>
 </template>
