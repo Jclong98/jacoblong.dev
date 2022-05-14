@@ -1,3 +1,11 @@
+<script setup>
+const props = defineProps({
+  isDark: {
+    type: Boolean,
+    default: false,
+  },
+})
+</script>
 <template>
   <button
     aria-label="Toggle Dark Mode"
