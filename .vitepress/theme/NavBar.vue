@@ -75,7 +75,7 @@ const links = [
       </li>
 
       <li>
-        <DarkToggle @click="toggleDark()" />
+        <DarkToggle :isDark="isDark" @click="toggleDark()" />
       </li>
     </ul>
   </nav>
