@@ -11,7 +11,9 @@ const isPost = computed(() => route.path.includes('/posts/'))
 
 <template>
   <div class="max-w-3xl mx-auto px-4 mb-4 dark:text-stone-300">
-    <NavBar />
+    <ClientOnly>
+      <NavBar />
+    </ClientOnly>
 
     <main>
       <div v-if="!isPost">
