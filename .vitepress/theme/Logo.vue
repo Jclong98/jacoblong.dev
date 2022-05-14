@@ -1,7 +1,5 @@
 <script setup>
 import { computed } from 'vue'
-// import { useDark } from '@vueuse/core'
-// const isDark = useDark()
 
 const props = defineProps({
   isDark: {
