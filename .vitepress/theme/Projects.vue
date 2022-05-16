@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Bird Avatar Generator',
     image: '/card-bird-avatar.png',
-    imageAlt: 'Screenshot of the bird avatar generator',
+    imageAlt: 'Bird Avatar Card',
     description:
       'A fun bird generator loosely based on the bird designs of Kurzgesagt made with Vue 3, Nuxt 3, UnoCSS, and TypeScript. Testing done with Vitest.',
     liveDemo: 'https://bird-avatars.jacoblong.dev',
@@ -13,9 +13,19 @@ const projects = [
     tags: ['Vue 3', 'Nuxt 3', 'UnoCSS', 'TypeScript'],
   },
   {
+    title: 'Supabase Nuxt 3 Starter',
+    image: '/card-supabase-nuxt3-starter.png',
+    imageAlt: 'Supabase Nuxt 3 Starter Card',
+    description:
+      'An easy way to set up a nuxt 3 project and get started using Supabase authentication.',
+    liveDemo: 'https://supabase-nuxt3-starter.netlify.app',
+    source: 'https://github.com/Jclong98/supabase-nuxt3-starter',
+    tags: ['Vue 3', 'Nuxt 3', 'Supabase', 'UnoCSS', 'TypeScript'],
+  },
+  {
     title: 'Noita Helper (WIP)',
     image: 'https://i.imgur.com/5UPSNZU.png',
-    imageAlt: 'Screenshot of the bird avatar generator',
+    imageAlt: 'Screenshot of Noita Helper',
     description:
       'A small, more focused wiki for the game Noita based on the in-game progress screen. Made with Nuxt 3.',
     liveDemo: 'https://noita-helper.jacoblong.dev',
