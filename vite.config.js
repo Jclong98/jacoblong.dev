@@ -11,7 +11,7 @@ export default {
     Unocss({
       shortcuts: [
         {
-          btn: 'rounded-lg bg-stone-100 dark:bg-stone-900 p-4 transition duration-200 active:scale-95 hover:brightness-75',
+          btn: 'rounded-lg bg-stone-100 dark:bg-transparent p-4 transition duration-200 active:scale-95 hover:brightness-75',
         },
         { card: 'bg-white dark:bg-stone-900 rounded-lg p-4' },
       ],
