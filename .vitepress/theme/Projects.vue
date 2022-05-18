@@ -115,10 +115,10 @@ const filteredProjects = computed(() =>
         />
         <label
           :for="tag"
-          class="btn px-6 cursor-pointer flex gap-2 items-center py-2 rounded-full text-sm font-medium bg-stone-200 dark:bg-stone-800 select-none group peer-focus:ring-2 peer-focus:ring-amber-400 border dark:border-stone-500"
+          class="btn px-6 cursor-pointer flex gap-2 items-center py-2 rounded-full text-sm font-medium dark:bg-stone-800 select-none group peer-focus:ring-2 peer-focus:ring-amber-400 border dark:border-stone-500"
           :class="[
             {
-              'dark:text-amber-400': selectedTags.includes(tag),
+              'bg-amber-300 dark:text-amber-400': selectedTags.includes(tag),
             },
             selectedTags.includes(tag) ? 'bg-amber-300' : 'bg-stone-200',
           ]"
