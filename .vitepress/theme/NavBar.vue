@@ -1,7 +1,8 @@
 <script setup>
+import { useDark, useToggle } from '@vueuse/core'
 import Logo from './Logo.vue'
 import DarkToggle from './DarkToggle.vue'
-import { useDark, useToggle } from '@vueuse/core'
+
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
@@ -24,7 +25,7 @@ const links = [
   //   name: 'About',
   //   title: 'About',
   //   href: '/about',
-  //   icon: 'i-iconoir-information',
+  //   icon: 'i-iconoir-info-empty',
   //   showName: true,
   // },
   {
