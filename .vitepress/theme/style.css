@@ -1,11 +1,9 @@
 html {
-  background-color: rgb(243 244 246);
-  transition: all ease-in-out 200ms;
+  @apply bg-gray-100 transition duration-200 ease-in-out;
 }
 
 html.dark {
-  /* background-color: hsl(24, 10%, 10%); */
-  background-color: black;
+  @apply bg-black;
   color-scheme: dark;
 }
 

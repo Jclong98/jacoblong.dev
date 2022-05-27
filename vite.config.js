@@ -4,6 +4,7 @@ import {
   presetIcons,
   presetTypography,
   presetWebFonts,
+  transformerDirectives,
 } from 'unocss'
 
 export default {
@@ -56,6 +57,7 @@ export default {
           },
         }),
       ],
+      transformers: [transformerDirectives()],
     }),
   ],
 }
