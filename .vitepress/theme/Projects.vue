@@ -8,7 +8,7 @@ const projects = [
     imageAlt: 'Bird Avatar Card',
     description:
       'A fun bird generator loosely based on the bird designs of Kurzgesagt made with Vue 3, Nuxt 3, UnoCSS, and TypeScript. Testing done with Vitest.',
-    liveDemo: 'https://bird-avatars.jacoblong.dev',
+    url: 'https://bird-avatars.jacoblong.dev',
     source: 'https://github.com/Jclong98/bird-avatars',
     tags: ['Vue 3', 'Nuxt 3', 'UnoCSS', 'TypeScript'],
   },
@@ -18,7 +18,7 @@ const projects = [
     imageAlt: 'Supabase Nuxt 3 Starter Card',
     description:
       'An easy way to set up a nuxt 3 project and get started using Supabase authentication.',
-    liveDemo: 'https://supabase-nuxt3-starter.netlify.app',
+    url: 'https://supabase-nuxt3-starter.netlify.app',
     source: 'https://github.com/Jclong98/supabase-nuxt3-starter',
     tags: ['Vue 3', 'Nuxt 3', 'Supabase', 'UnoCSS', 'TypeScript'],
   },
@@ -28,7 +28,7 @@ const projects = [
     imageAlt: 'Screenshot of Noita Helper',
     description:
       'A small, more focused wiki for the game Noita based on the in-game progress screen. Made with Nuxt 3.',
-    liveDemo: 'https://noita-helper.jacoblong.dev',
+    url: 'https://noita-helper.jacoblong.dev',
     tags: ['Vue 3', 'Nuxt 3'],
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     image: '/og_image.png',
     imageAlt: 'My personal logo',
     description: 'My personal website made with VitePress, Vue 3, and UnoCSS.',
-    liveDemo: 'https://jacoblong.dev',
+    url: 'https://jacoblong.dev',
     source: 'https://github.com/Jclong98/jacoblong.dev',
     tags: ['Vite', 'Vue 3', 'UnoCSS'],
   },
@@ -46,7 +46,7 @@ const projects = [
     imageAlt: 'Screenshot of the Boids Application',
     description:
       'A boids implementation with reactive sliders to play around with the simulation.',
-    liveDemo: 'https://boids.jacoblong.dev',
+    url: 'https://boids.jacoblong.dev',
     source: 'https://github.com/jclong98/boids-vue',
     tags: ['Vite', 'Vue 3'],
   },
@@ -56,7 +56,7 @@ const projects = [
     imageAlt: 'Screenshot of the Todo React Application',
     description:
       'Solution to the Frontend Mentor Todo Challenge. A todo list made with Vite, React, usehooks-ts, react-sortablejs, and TypeScript. I made this to learn React. Saves todo items to local storage.',
-    liveDemo: 'https://gleaming-alpaca-bd8b47.netlify.app/',
+    url: 'https://gleaming-alpaca-bd8b47.netlify.app/',
     source: 'https://github.com/jclong98/todo-react',
     tags: ['Vite', 'React', 'TypeScript'],
   },
@@ -66,7 +66,7 @@ const projects = [
     imageAlt: 'Screenshot of the Todo Vue Application',
     description:
       'Solution to the Frontend Mentor Todo Challenge. A todo list made with Vite, Vue 3, VueUse, VueDraggable, and TypeScript. I made this as a comparison to the Todo-React project. They behave exactly the same. Saves todo items to local storage.',
-    liveDemo: 'https://dreamy-bavarois-f624c2.netlify.app/',
+    url: 'https://dreamy-bavarois-f624c2.netlify.app/',
     source: 'https://github.com/jclong98/todo-vue',
     tags: ['Vite', 'Vue 3', 'TypeScript'],
   },
@@ -76,7 +76,7 @@ const projects = [
     imageAlt: 'Screenshot of the Advice Generator Application',
     description:
       'Solution to the Frontend Mentor Advice Generator Application Challenge. A Simple one button application that makes a request to an external API. Made with Vite, React, and UnoCSS.',
-    liveDemo: 'https://beautiful-kitsune-fe1c9f.netlify.app',
+    url: 'https://beautiful-kitsune-fe1c9f.netlify.app',
     source: 'https://github.com/Jclong98/Frontend-Mentor-Advice-App',
     tags: ['Vite', 'React', 'UnoCSS', 'TypeScript'],
   },
@@ -135,7 +135,7 @@ const filteredProjects = computed(() =>
     >
       <!-- Image -->
       <a
-        :href="project.liveDemo"
+        :href="project.url"
         class="flex md:w-5/4 md:-translate-x-1/5 rounded-lg"
       >
         <img
@@ -151,21 +151,21 @@ const filteredProjects = computed(() =>
         <!-- title and description -->
         <div class="grid gap-2">
           <h2 class="text-3xl font-semibold">
-            <a :href="project.liveDemo">{{ project.title }}</a>
+            <a :href="project.url">{{ project.title }}</a>
           </h2>
           <p>{{ project.description }}</p>
         </div>
 
         <!-- actions -->
         <div class="grid md:grid-cols-2 gap-4 mt-6">
-          <!-- Live Demo -->
+          <!-- Visit Site -->
           <a
-            v-if="project.liveDemo"
-            :href="project.liveDemo"
+            v-if="project.url"
+            :href="project.url"
             aria-label="Live Demo"
             class="btn px-8 text-center bg-amber-300 dark:text-amber-400 text-black font-semibold border"
           >
-            Live Demo
+            Visit Site
             <i class="i-iconoir-open-new-window ml-1"></i>
           </a>
 
