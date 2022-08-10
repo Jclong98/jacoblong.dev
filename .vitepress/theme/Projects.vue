@@ -3,6 +3,15 @@ import { ref, computed } from 'vue'
 
 const projects = [
   {
+    title: 'ianmartin.photos',
+    image: '/card-ianmartin-photos.png',
+    imageAlt: 'Screenshot of ianmartin.photos',
+    description:
+      'A photography portfolio website built with Nuxt 3, Sanity.io, and UnoCSS.',
+    url: 'https://ianmartin.photos',
+    tags: ['Vue 3', 'Nuxt 3', 'UnoCSS', 'TypeScript', 'Sanity.io'],
+  },
+  {
     title: 'Bird Avatar Generator',
     image: '/card-bird-avatar.png',
     imageAlt: 'Bird Avatar Card',
