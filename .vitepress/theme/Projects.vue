@@ -146,6 +146,7 @@ const filteredProjects = computed(() =>
       <a
         :href="project.url"
         class="flex md:w-5/4 md:-translate-x-1/5 rounded-lg"
+        target="_blank"
       >
         <img
           :src="project.image"
@@ -160,7 +161,7 @@ const filteredProjects = computed(() =>
         <!-- title and description -->
         <div class="grid gap-2">
           <h2 class="text-3xl font-semibold">
-            <a :href="project.url">{{ project.title }}</a>
+            <a :href="project.url" target="_blank">{{ project.title }}</a>
           </h2>
           <p>{{ project.description }}</p>
         </div>
@@ -171,8 +172,8 @@ const filteredProjects = computed(() =>
           <a
             v-if="project.url"
             :href="project.url"
-            aria-label="Live Demo"
             class="btn px-8 text-center bg-amber-300 dark:text-amber-400 text-black font-semibold border"
+            target="_blank"
           >
             Visit Site
             <i class="i-iconoir-open-new-window ml-1"></i>
@@ -182,8 +183,8 @@ const filteredProjects = computed(() =>
           <a
             v-if="project.source"
             :href="project.source"
-            aria-label="Source"
             class="btn px-8 text-center font-semibold border dark:border-stone-500"
+            target="_blank"
           >
             Source
             <i class="i-iconoir-code-brackets ml-1"></i>
