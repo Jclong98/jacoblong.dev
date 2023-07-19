@@ -23,7 +23,7 @@ pnpm dev
 Build the application for production:
 
 ```bash
-pnpm generate
+pnpm build
 ```
 
 Locally preview production build:
