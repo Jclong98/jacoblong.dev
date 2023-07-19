@@ -1,37 +1,46 @@
-<script setup>
-import Date from './Date.vue'
-import { computed } from 'vue'
-import { useData, useRoute } from 'vitepress'
-import { data as posts } from '../posts.data'
+<script setup lang="ts">
+const route = useRoute();
 
-const { frontmatter: data } = useData()
+const { data } = await useAsyncData(() => queryContent(route.path).findOne());
 
-const route = useRoute()
-
-function findCurrentIndex() {
-  return posts.findIndex((p) => p.href === route.path)
-}
-
-// use the customData date which contains pre-resolved date info
-const date = computed(() => posts[findCurrentIndex()].date)
-const nextPost = computed(() => posts[findCurrentIndex() - 1])
-const prevPost = computed(() => posts[findCurrentIndex() + 1])
+const [previousPost, nextPost] = await queryContent()
+  .only(["_path", "title"])
+  .sort({ date: 1 })
+  .findSurround(route.path);
 </script>
 
 <template>
   <article
     class="bg-white dark:bg-stone-900 p-4 rounded-lg mb-4 border dark:border-stone-500"
+    v-if="data"
   >
-    <header>
-      <Date :date="date" />
-      <h1 class="text-4xl mt-4">
-        {{ data.title }}
-      </h1>
-    </header>
+    <Head>
+      <Title>{{ data.title }}</Title>
+    </Head>
 
-    <Content
-      class="prose dark:prose-invert max-w-none dark:prose-hr:border-stone-700"
-    />
+    <ContentRenderer
+      :value="data"
+      class="bg-white dark:bg-stone-900 p-4 rounded-lg mb-4 border dark:border-stone-500"
+    >
+      <div>
+        <header>
+          <Date :value="data?.date" />
+
+          <h1 class="text-4xl mt-4">
+            {{ data?.title }}
+          </h1>
+        </header>
+
+        <ContentRendererMarkdown
+          :value="data?.body"
+          class="prose dark:prose-invert max-w-none dark:prose-hr:border-stone-700"
+        />
+      </div>
+
+      <template #empty>
+        <p>No content found.</p>
+      </template>
+    </ContentRenderer>
 
     <!-- Footer -->
     <footer
@@ -39,9 +48,9 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
     >
       <div class="grid sm:grid-cols-2 gap-4">
         <!-- Previous Post -->
-        <a
-          v-if="prevPost"
-          :href="prevPost.href"
+        <NuxtLink
+          v-if="previousPost"
+          :to="previousPost._path"
           class="btn border dark:border-stone-500"
         >
           <h2 class="text-stone-500 dark:text-stone-500">
@@ -49,9 +58,9 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
             Previous Post
           </h2>
           <div class="text-xl">
-            {{ prevPost.title }}
+            {{ previousPost.title }}
           </div>
-        </a>
+        </NuxtLink>
         <div
           v-else
           class="flex items-center opacity-40 btn border dark:border-stone-500"
@@ -60,9 +69,9 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
         </div>
 
         <!-- Next Post -->
-        <a
+        <NuxtLink
           v-if="nextPost"
-          :href="nextPost.href"
+          :to="nextPost._path"
           class="btn border dark:border-stone-500"
         >
           <h2 class="text-stone-500 dark:text-stone-500">
@@ -72,7 +81,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           <div class="text-xl">
             {{ nextPost.title }}
           </div>
-        </a>
+        </NuxtLink>
         <div
           v-else
           class="flex items-center opacity-40 btn border dark:border-stone-500"
@@ -81,10 +90,13 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
         </div>
 
         <!-- Back to blog button -->
-        <a href="/posts" class="btn sm:col-span-2 border dark:border-stone-500">
+        <NuxtLink
+          to="/posts"
+          class="btn sm:col-span-2 border dark:border-stone-500"
+        >
           <i class="i-iconoir-arrow-left"></i>
           Back to the blog
-        </a>
+        </NuxtLink>
       </div>
     </footer>
   </article>

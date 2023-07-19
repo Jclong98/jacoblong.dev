@@ -1,7 +1,5 @@
-<script setup>
-import RecentPosts from './RecentPosts.vue'
-import Link from './Link.vue'
-</script>
+<script lang="ts" setup></script>
+
 <template>
   <div>
     <p class="leading-8">
@@ -21,12 +19,12 @@ import Link from './Link.vue'
       neat new bits and bobs of modern web development.
     </p>
 
-    <Link
+    <LinkBtn
       href="/projects"
-      class="btn group btn px-8 text-center bg-amber-300 text-black font-semibold border dark:text-amber-400 dark:bg-transparents my-4"
+      class="btn group btn px-8 text-center bg-amber-300 text-black font-semibold border border-current dark:text-amber-400 dark:bg-transparents my-4"
     >
       See My Work
-    </Link>
+    </LinkBtn>
 
     <div class="prose dark:prose-invert">
       <p>
@@ -39,6 +37,6 @@ import Link from './Link.vue'
 
     <hr class="border-stone-300 dark:border-stone-700 my-4" />
 
-    <RecentPosts />
+    <LatestPosts />
   </div>
 </template>

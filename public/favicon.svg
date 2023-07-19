@@ -2,12 +2,12 @@
   <defs>
     <style>
       svg {
-        stroke: white;
+        stroke: black;
         color-scheme:light dark;
       }
       @media (prefers-color-scheme:dark) {
         svg {
-          stroke: black;
+          stroke: white;
         }
       }
     </style>
