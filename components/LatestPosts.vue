@@ -13,31 +13,31 @@ const { data: recentPosts } = useAsyncData(() =>
 
     <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
       <li
-        v-for="{ title, href, date, excerpt } in recentPosts"
-        class="card border dark:border-stone-500"
+        v-for="{ title, _path, date, excerpt } in recentPosts"
+        class="card border dark:border-stone-500 flex flex-col justify-between"
       >
-        <article class="h-full flex flex-col justify-between">
-          <div>
+        <div>
+          <header>
             <Date :value="date" />
 
             <h2 class="text-xl">
-              <a :href="href">{{ title }}</a>
+              <NuxtLink :to="_path">{{ title }}</NuxtLink>
             </h2>
+          </header>
 
-            <ContentRendererMarkdown
-              class="prose dark:prose-invert"
-              v-if="excerpt"
-              :value="excerpt"
-            />
-          </div>
+          <ContentRendererMarkdown
+            class="prose dark:prose-invert"
+            v-if="excerpt"
+            :value="excerpt"
+          />
+        </div>
 
-          <LinkBtn :href="href">Read More</LinkBtn>
-        </article>
+        <LinkBtn :to="_path">Read More</LinkBtn>
       </li>
     </ul>
 
     <div class="mt-4 mb-8">
-      <LinkBtn href="/posts">View All Blog Posts</LinkBtn>
+      <LinkBtn to="/posts">View All Blog Posts</LinkBtn>
     </div>
   </div>
 </template>
