@@ -54,7 +54,7 @@ const links = [
 
 <template>
   <nav class="flex justify-between my-6">
-    <NuxtLink to="/" aria-label="Home">
+    <NuxtLink to="/" title="Home">
       <Logo class="w-[50px] h-50px" />
     </NuxtLink>
 
