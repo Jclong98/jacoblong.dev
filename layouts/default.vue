@@ -31,7 +31,7 @@ useSeoMeta({
   <div class="max-w-3xl mx-auto mb-4 dark:text-stone-300">
     <NavBar class="mx-4" />
 
-    <main class="sm:mx-4">
+    <main>
       <slot />
     </main>
 
