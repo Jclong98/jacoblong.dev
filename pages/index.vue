@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>
+  <div class="mx-4">
     <p class="leading-8">
       <span class="dark:text-amber-400"> Hi, my name is </span>
       <br />

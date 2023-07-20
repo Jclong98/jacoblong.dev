@@ -10,7 +10,7 @@ useSeoMeta({ title: "Blog" });
 </script>
 
 <template>
-  <div>
+  <div class="mx-4">
     <h1 class="text-5xl font-jetbrains-mono">Blog</h1>
 
     <ul>
