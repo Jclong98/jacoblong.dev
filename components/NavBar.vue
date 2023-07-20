@@ -1,7 +1,4 @@
 <script setup lang="ts">
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
-
 const links = [
   {
     name: "Blog",
@@ -61,33 +58,27 @@ const links = [
       <Logo class="w-[50px] h-50px" />
     </NuxtLink>
 
-    <ul class="flex gap-4 items-center">
-      <li v-for="link in links" :key="link.name">
-        <NuxtLink
-          :href="link.href"
-          :to="link.to"
-          :title="link.title"
-          class="text-xl"
-        >
-          <span :class="[{ 'sr-only': !link.showName }, 'hidden sm:inline']">
-            {{ link.name }}
-          </span>
-          <i :class="link.icon" class="ml-1"></i>
-        </NuxtLink>
-      </li>
+    <div class="flex gap-4">
+      <ul class="flex gap-4 items-center">
+        <li v-for="link in links" :key="link.name">
+          <NuxtLink
+            :href="link.href"
+            :to="link.to"
+            :title="link.title"
+            class="text-xl"
+          >
+            <span
+              class="hidden sm:inline"
+              :class="{ 'sr-only': !link.showName }"
+            >
+              {{ link.name }}
+            </span>
+            <i :class="link.icon" class="ml-1"></i>
+          </NuxtLink>
+        </li>
+      </ul>
 
-      <li>
-        <button
-          aria-label="Toggle Dark Mode"
-          title="Toggle Dark Mode"
-          class="text-xl"
-          type="button"
-          role="switch"
-          @click="toggleDark()"
-        >
-          <i :class="isDark ? 'i-iconoir-sun-light' : 'i-iconoir-half-moon'" />
-        </button>
-      </li>
-    </ul>
+      <DarkToggle />
+    </div>
   </nav>
 </template>

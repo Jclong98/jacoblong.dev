@@ -28,14 +28,14 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="max-w-3xl mx-auto px-4 mb-4 dark:text-stone-300">
-    <NavBar />
+  <div class="max-w-3xl mx-auto mb-4 dark:text-stone-300">
+    <NavBar class="mx-4" />
 
-    <main>
+    <main class="sm:mx-4">
       <slot />
     </main>
 
-    <footer class="opacity-65">
+    <footer class="opacity-65 mx-4">
       <a
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
         class="underline"

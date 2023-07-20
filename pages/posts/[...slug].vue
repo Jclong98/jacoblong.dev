@@ -11,8 +11,8 @@ const [previousPost, nextPost] = await queryContent()
 
 <template>
   <article
-    class="bg-white dark:bg-stone-900 p-4 rounded-lg mb-4 border dark:border-stone-500"
     v-if="data"
+    class="bg-white dark:bg-stone-900 p-4 sm:rounded-lg mb-4 border dark:border-stone-500"
   >
     <Head>
       <Title>{{ data.title }}</Title>
