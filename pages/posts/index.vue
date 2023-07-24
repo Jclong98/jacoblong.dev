@@ -16,7 +16,7 @@ useSeoMeta({ title: "Blog" });
     <ul>
       <li
         v-for="{ title, _path, date, excerpt } of posts"
-        class="my-6 rounded-lg border dark:border-stone-500"
+        class="my-6 rounded-lg border border-current dark:border-stone-500"
       >
         <NuxtLink :to="_path" class="card grid">
           <Date :value="date" />

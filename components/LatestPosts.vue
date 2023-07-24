@@ -14,7 +14,7 @@ const { data: recentPosts } = useAsyncData(() =>
     <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
       <li
         v-for="{ title, _path, date, excerpt } in recentPosts"
-        class="card border dark:border-stone-500 flex flex-col justify-between"
+        class="card border border-current dark:border-stone-500 flex flex-col justify-between"
       >
         <div>
           <header>
