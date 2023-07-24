@@ -1,5 +1,15 @@
 # jacoblong.dev
 
+My personal website with a blog and portfolio of projects.
+
+## Stack
+
+- [Nuxt 3](https://nuxt.com)
+  - [Nuxt Content](https://content-v2.nuxtjs.org/)
+- [UnoCSS](https://unocss.dev/)
+- [VueUse](https://vueuse.org/)
+- [Typescript](https://www.typescriptlang.org/)
+
 Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
 
 ## Setup
