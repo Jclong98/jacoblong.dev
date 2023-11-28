@@ -44,10 +44,11 @@ const projects = [
     title: "jacoblong.dev",
     image: "/og_image.png",
     imageAlt: "My personal logo",
-    description: "My personal website made with VitePress, Vue 3, and UnoCSS.",
+    description:
+      "My personal website made with Nuxt Content, Vue 3, and UnoCSS.",
     url: "https://jacoblong.dev",
     source: "https://github.com/Jclong98/jacoblong.dev",
-    tags: ["Vite", "Vue 3", "UnoCSS"],
+    tags: ["Vue 3", "UnoCSS", "Nuxt 3"],
   },
   {
     title: "Boids",
