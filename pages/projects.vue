@@ -8,7 +8,7 @@ const projects = [
     imageAlt: "Screenshot of ianmartin.photos",
     description:
       "A photography portfolio website built with Nuxt 3, Sanity.io, and UnoCSS.",
-    url: "https://ianmartin.photos",
+    url: "https://ianmartinphotos.netlify.app/",
     tags: ["Vue 3", "Nuxt 3", "UnoCSS", "TypeScript", "Sanity.io"],
   },
   {
