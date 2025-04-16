@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const links = [
-  {
-    name: "Blog",
-    title: "Blog",
-    to: "/posts",
-    icon: "i-iconoir-book",
-    showName: true,
-  },
+  // {
+  //   name: "Blog",
+  //   title: "Blog",
+  //   to: "/posts",
+  //   icon: "i-iconoir-book",
+  //   showName: true,
+  // },
   {
     name: "Projects",
     title: "Projects",

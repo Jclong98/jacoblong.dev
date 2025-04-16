@@ -35,8 +35,8 @@
       </p>
     </div>
 
-    <hr class="border-stone-300 dark:border-stone-700 my-4" />
+    <!-- <hr class="border-stone-300 dark:border-stone-700 my-4" />
 
-    <LatestPosts />
+    <LatestPosts /> -->
   </div>
 </template>
